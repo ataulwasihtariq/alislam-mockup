@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>alislam.it – Mockup nuovo design (bozza, non pubblicata)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fbf8f1;font-family:'Source Sans 3',system-ui,sans-serif;color:#2b2f2c}
+a{color:#2f5d4a}a:hover{color:#1e2b26}
+.w{max-width:1240px;margin:0 auto;padding:0 32px}
+.serif{font-family:'Cormorant Garamond',serif}
+.eyebrow{margin:0 0 12px;font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:#6f5620;font-weight:600}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600;color:#1e2b26;margin:0}
+h2{font-size:46px;line-height:1.1}
+.btn{display:inline-block;background:#2f5d4a;color:#fbf8f1;text-decoration:none;padding:16px 30px;font-weight:600;border-radius:2px}
+.btn2{display:inline-block;border:1px solid #a8873a;color:#1e2b26;text-decoration:none;padding:15px 30px;font-weight:600;border-radius:2px;background:rgba(251,248,241,.7)}
+.pat{background-image:url(pattern.svg);background-size:80px 80px;background-color:#f5f1e6}
+.patdark{background-image:linear-gradient(rgba(30,43,38,.93),rgba(30,43,38,.93)),url(pattern.svg);background-size:auto,80px 80px}
+.top{background:#1e2b26;color:#efe9da;font-size:14px}
+.top .w{padding-top:9px;padding-bottom:9px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.top a{color:#efe9da;text-decoration:none;margin-left:22px}
+header{border-bottom:1px solid #e6dcc4}
+header .w{padding-top:20px;padding-bottom:20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:#1e2b26}
+.brand b{display:block;font-family:'Cormorant Garamond',serif;font-size:25px;line-height:1.1}
+.brand small{display:block;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#6f5620}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px;font-size:16px}
+nav a{text-decoration:none;color:#1e2b26}
+nav a.cta{color:#fbf8f1;background:#2f5d4a;padding:11px 22px;border-radius:2px;font-weight:600}
+.hero{min-height:620px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(251,248,241,.97) 0%,rgba(251,248,241,.88) 34%,rgba(251,248,241,0) 62%),linear-gradient(135deg,#efe6cf,#d8c9a0)}
+.hero .w,.serv .w{width:100%}
+.hero .in{max-width:560px;padding:80px 0}
+.hero h1{font-size:68px;line-height:1.04;margin:0 0 22px}
+.hero p.lead{margin:0 0 34px;font-size:20px;line-height:1.6;font-weight:300;color:#3a3f3b}
+.rule{width:64px;height:2px;background:#a8873a;margin-bottom:26px}
+.band{height:26px;border-top:1px solid #e6dcc4;border-bottom:1px solid #e6dcc4}
+section.s{padding:96px 0 88px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px}
+.card{text-decoration:none;color:inherit;background:#fff;border:1px solid #e6dcc4;display:flex;flex-direction:column}
+.ph{width:100%;height:230px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-size:14px;color:#6f5620;background:linear-gradient(135deg,#efe6cf,#e2d4ab);font-style:italic}
+.card .b{padding:30px 32px 34px;display:flex;flex-direction:column;gap:12px}
+.card h3{font-size:30px}
+.card p{margin:0;font-size:17px;line-height:1.6;color:#4a4f4b}
+.card .go{margin-top:8px;color:#2f5d4a;font-weight:600}
+.serm .w{padding-top:88px;padding-bottom:88px;display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start;color:#efe9da}
+.serm h2{color:#fbf8f1;margin-bottom:18px}
+.serm .eyebrow{color:#d8c48f}
+.serm p{margin:0 0 28px;font-size:18px;line-height:1.65;font-weight:300}
+.serm .btn3{display:inline-block;border:1px solid #d8c48f;color:#fbf8f1;text-decoration:none;padding:14px 28px;font-weight:600;border-radius:2px}
+.serm .list{flex:1.4 1 520px;display:flex;flex-direction:column}
+.serm .list a{text-decoration:none;color:#fbf8f1;padding:26px 0;border-top:1px solid rgba(216,196,143,.45);display:flex;flex-direction:column;gap:8px}
+.serm .list a:last-child{border-bottom:1px solid rgba(216,196,143,.45)}
+.serm .list small{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#d8c48f}
+.serm .list span{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;line-height:1.2}
+.faq{display:flex;flex-wrap:wrap;gap:64px;padding-top:96px;padding-bottom:96px}
+.faq .q a{display:flex;justify-content:space-between;gap:20px;padding:20px 0;border-top:1px solid #e6dcc4;text-decoration:none;color:#1e2b26;font-size:20px}
+.faq .q a:last-of-type{border-bottom:1px solid #e6dcc4}
+.faq .q a i{color:#a8873a;font-style:normal}
+figure{margin:0;border:1px solid #e6dcc4;padding:44px 40px;text-align:center}
+blockquote{margin:0 0 18px;font-family:'Cormorant Garamond',serif;font-size:36px;line-height:1.25;color:#1e2b26;font-style:italic}
+figcaption{font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:#6f5620}
+.box{background:#fff;border:1px solid #e6dcc4;padding:32px 34px;display:flex;flex-direction:column;gap:12px}
+.box h3{font-size:28px}.box p{margin:0;font-size:17px;line-height:1.6;color:#4a4f4b}
+.lib{background:#f5f1e6;border-top:1px solid #e6dcc4;border-bottom:1px solid #e6dcc4}
+.lib .w{padding-top:88px;padding-bottom:88px}
+.libhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:44px}
+.books{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
+.book{text-decoration:none;color:inherit;display:flex;gap:22px;align-items:center;background:#fff;border:1px solid #e6dcc4;padding:24px}
+.cover{width:92px;height:132px;flex:none;border-left:6px solid #a8873a;display:flex;align-items:center;justify-content:center;padding:10px;color:#f5f1e6;font-family:'Cormorant Garamond',serif;font-size:14px;text-align:center;line-height:1.15}
+.book b{display:block;font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;color:#1e2b26;line-height:1.2;margin-bottom:6px}
+.book small{font-size:15px;color:#5a5f5b}
+.serv{min-height:460px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(245,241,230,.97) 0%,rgba(245,241,230,.9) 38%,rgba(245,241,230,0) 66%),linear-gradient(135deg,#e8dcb8,#cdbb88)}
+.serv .in{max-width:520px;padding:72px 0}
+.serv p{margin:0 0 26px;font-size:18px;line-height:1.65;font-weight:300;color:#3a3f3b}
+.where{text-align:center;padding-top:96px;padding-bottom:96px}
+.where>p{margin:0 auto 36px;max-width:640px;font-size:18px;line-height:1.6;color:#4a4f4b}
+.cities{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:980px;margin:0 auto 40px}
+.cities span{padding:9px 18px;border:1px solid #e6dcc4;background:#fff;font-size:16px}
+.cta2{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+footer{color:#d9d3c3}
+footer .g{padding-top:72px;padding-bottom:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px}
+footer .g div{display:flex;flex-direction:column;gap:10px;font-size:16px}
+footer .g strong{font-family:'Cormorant Garamond',serif;font-size:26px;color:#fbf8f1}
+footer .g small{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#d8c48f}
+footer .g a{color:#efe9da;text-decoration:none}
+footer .bot{padding-top:22px;padding-bottom:30px;border-top:1px solid rgba(216,196,143,.35);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px}
+footer .bot a{color:#d9d3c3;margin-left:20px}
+.note{background:#fff3cd;color:#5c4a00;font-size:14px;padding:10px 32px;text-align:center;border-bottom:1px solid #e6d28a}
+</style>
+</head>
+<body>
+<div class="note">Bozza di design per revisione – non è il sito pubblicato. Le immagini sono segnaposto.</div>
+
+<div class="top"><div class="w"><span>Comunità Musulmana Ahmadiyya in Italia</span><span><a href="#">Numero verde 800 598 005</a><a href="#">WhatsApp +39 051 199 00 451</a><a href="#">contatti@alislam.it</a></span></div></div>
+
+<header><div class="w">
+<a href="#" class="brand">
+<svg width="46" height="46" viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="#a8873a" stroke-width="3"><path d="M40 6 L50 30 L74 40 L50 50 L40 74 L30 50 L6 40 L30 30 Z"/><path d="M16 16 L40 25 L64 16 L55 40 L64 64 L40 55 L16 64 L25 40 Z"/></g><circle cx="40" cy="40" r="8" fill="#2f5d4a"/></svg>
+<span><b>Comunità Musulmana Ahmadiyya</b><small>in Italia · dal 1889</small></span></a>
+<nav aria-label="Menu principale"><a href="#">Conoscere l’Islam</a><a href="#">Chi siamo</a><a href="#">Domande e risposte</a><a href="#">Sermoni del Venerdì</a><a href="#">Libri</a><a href="#">Notizie ed eventi</a><a href="#" class="cta">Parliamone</a></nav>
+</div></header>
+
+<section class="hero"><div class="w"><div class="in">
+<p class="eyebrow">Il motto della Comunità</p><div class="rule"></div>
+<h1>Amore per tutti, odio per nessuno</h1>
+<p class="lead">Dal 1889 la Comunità Musulmana Ahmadiyya presenta l’Islam a partire dal Corano e dall’esempio del Profeta Muhammad (sa). In Italia è presente in 17 città.</p>
+<a href="#" class="btn" style="margin-right:14px">Che cos’è l’Islam</a><a href="#" class="btn2">Chi siamo</a>
+</div></div></section>
+
+<div class="band pat"></div>
+
+<section class="w s">
+<div style="text-align:center;max-width:720px;margin:0 auto 56px"><p class="eyebrow">Da dove iniziare</p><h2>Tre porte per conoscerci</h2></div>
+<div class="cards">
+<a href="#" class="card"><div class="ph">Libro aperto su un leggio in legno intagliato</div><div class="b"><h3>Conoscere l’Islam</h3><p>Dio, il Profeta Muhammad (sa), il Corano, la preghiera: le basi della fede spiegate con le fonti.</p><span class="go">Leggi →</span></div></a>
+<a href="#" class="card"><div class="ph">Persone che camminano sotto i portici di un cortile in travertino</div><div class="b"><h3>Chi siamo</h3><p>Una comunità di rinnovamento nata nel 1889, guidata da un Califfo, presente in oltre 200 Paesi.</p><span class="go">Leggi →</span></div></a>
+<a href="#" class="card"><div class="ph">Persone di origini diverse che conversano attorno a un tavolo</div><div class="b"><h3>Domande e risposte</h3><p>Jihad, donne, libertà di fede, Gesù: le risposte alle domande che ci vengono rivolte più spesso.</p><span class="go">Leggi →</span></div></a>
+</div></section>
+
+<section class="serm patdark"><div class="w">
+<div style="flex:1 1 380px;min-width:0"><p class="eyebrow">Ogni venerdì</p><h2>Il Sermone del Venerdì</h2>
+<p>Ogni settimana Hazrat Mirza Masroor Ahmad, Califfo della Comunità, tiene un sermone seguito in tutto il mondo. Lo pubblichiamo tradotto in italiano.</p><a href="#" class="btn3">Tutti i sermoni</a></div>
+<div class="list">
+<a href="#"><small>6 novembre 2026</small><span>Sacrificio finanziario: lo spirito della Tahrik-e-Jadid</span></a>
+<a href="#"><small>30 ottobre 2026</small><span>Muhammad (sa): la semplicità della sua vita</span></a>
+<a href="#"><small>23 ottobre 2026</small><span>Muhammad (sa): la semplicità del Santo Profeta</span></a>
+</div></div></section>
+
+<section class="w faq">
+<div class="q" style="flex:1.3 1 520px;min-width:0"><p class="eyebrow">Domande frequenti</p><h2 style="margin-bottom:30px">Le domande che ci fate più spesso</h2>
+<a href="#"><span>Che cosa significa davvero «jihad»?</span><i>→</i></a>
+<a href="#"><span>I musulmani credono in Gesù?</span><i>→</i></a>
+<a href="#"><span>Che posto ha la donna nell’Islam?</span><i>→</i></a>
+<a href="#"><span>Si può lasciare la propria religione?</span><i>→</i></a>
+<a href="#"><span>Gli ahmadi sono musulmani?</span><i>→</i></a>
+<p style="margin:22px 0 0"><a href="#" style="display:inline;border:0;padding:0;font-size:inherit;font-weight:600;text-decoration:none">Tutte le domande →</a></p></div>
+<div style="flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:28px">
+<figure class="pat"><blockquote>«Non c’è costrizione nella religione.»</blockquote><figcaption>Sacro Corano, 2:257 [2:256]</figcaption></figure>
+<div class="box"><h3>Leggi il Corano online</h3><p>Testo arabo, traduzione italiana e recitazione audio, gratuitamente.</p><a href="#" class="btn" style="align-self:flex-start;padding:13px 24px;margin-top:6px">Apri il Corano in italiano</a></div>
+</div></section>
+
+<section class="lib"><div class="w">
+<div class="libhead"><div><p class="eyebrow">Biblioteca</p><h2>Libri da scaricare, gratuiti</h2></div><a href="#" style="font-weight:600;text-decoration:none">Tutte le pubblicazioni →</a></div>
+<div class="books">
+<a href="#" class="book"><div class="cover" style="background:#2f5d4a">La Filosofia degli Insegnamenti dell’Islam</div><div><b>La Filosofia degli Insegnamenti dell’Islam</b><small>Hazrat Mirza Ghulam Ahmad · PDF</small></div></a>
+<a href="#" class="book"><div class="cover" style="background:#1e2b26">La Crisi Mondiale e la Via per la Pace</div><div><b>La Crisi Mondiale e la Via per la Pace</b><small>Hazrat Mirza Masroor Ahmad · PDF</small></div></a>
+<a href="#" class="book"><div class="cover" style="background:#7a5f22;border-left-color:#2f5d4a;font-size:15px">Gesù in India</div><div><b>Gesù in India</b><small>Hazrat Mirza Ghulam Ahmad · PDF</small></div></a>
+</div></div></section>
+
+<section class="serv"><div class="w"><div class="in"><p class="eyebrow">Servire l’umanità</p><h2 style="margin-bottom:18px">La fede si riconosce dalle opere</h2>
+<p>Scuole, ospedali e aiuti umanitari, sostenuti dalle offerte volontarie dei membri, al servizio di chiunque, senza distinzione di fede.</p><a href="#" style="font-weight:600;text-decoration:none">Le nostre attività →</a></div></div></section>
+
+<section class="w where"><p class="eyebrow">Dove siamo</p><h2 style="margin-bottom:16px">Presenti in 17 città italiane</h2>
+<p>Per visitare una nostra sede, partecipare a un incontro o invitarci nella vostra scuola, parrocchia o associazione, scriveteci.</p>
+<div class="cities"><span>Bologna</span><span>Parma</span><span>Brescia</span><span>Ravenna</span><span>Venezia-Mestre</span><span>Padova</span><span>Trento</span><span>Bolzano</span><span>Milano</span><span>Varese</span><span>Como</span><span>Torino</span><span>Cuneo</span><span>Firenze</span><span>Roma</span><span>Napoli</span><span>Catania</span></div>
+<div class="cta2"><a href="#" class="btn">Scrivici su WhatsApp</a><a href="#" class="btn2">Numero verde 800 598 005</a></div></section>
+
+<footer class="patdark">
+<div class="w g">
+<div><strong>Comunità Musulmana Ahmadiyya</strong><span style="line-height:1.6;font-size:15px">Via Morgobbo 1035/A, Gavaseto<br>40018 San Pietro in Casale (BO)</span></div>
+<div><small>Conoscere</small><a href="#">Che cos’è l’Islam</a><a href="#">Il Sacro Corano</a><a href="#">Il Profeta Muhammad</a><a href="#">Il Messia Promesso</a></div>
+<div><small>Per la Comunità</small><a href="#">Orari delle preghiere</a><a href="#">Calendario del Ramadan</a><a href="#">Iscrizione</a></div>
+<div><small>Contatti</small><a href="#">Numero verde 800 598 005</a><a href="#">WhatsApp +39 051 199 00 451</a><a href="#">contatti@alislam.it</a></div>
+</div>
+<div class="w bot"><span>© Associazione The Ahmadiyya Muslim Jama’at Italia</span><span><a href="#">Privacy</a><a href="#">Cookie</a></span></div>
+</footer>
+</body>
+</html>
