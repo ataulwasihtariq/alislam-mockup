@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Waqf-e-Nau – Dipartimenti – alislam.it (bozza)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fbf8f1;font-family:'Source Sans 3',system-ui,sans-serif;color:#2b2f2c}
+a{color:#2f5d4a}a:hover{color:#1e2b26}
+.w{max-width:1240px;margin:0 auto;padding:0 32px}
+.serif{font-family:'Cormorant Garamond',serif}
+.eyebrow{margin:0 0 12px;font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:#6f5620;font-weight:600}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600;color:#1e2b26;margin:0}
+h2{font-size:46px;line-height:1.1}
+.btn{display:inline-block;background:#2f5d4a;color:#fbf8f1;text-decoration:none;padding:16px 30px;font-weight:600;border-radius:2px}
+.btn2{display:inline-block;border:1px solid #a8873a;color:#1e2b26;text-decoration:none;padding:15px 30px;font-weight:600;border-radius:2px;background:rgba(251,248,241,.7)}
+.pat{background-image:url(../pattern.svg);background-size:80px 80px;background-color:#f5f1e6}
+.patdark{background-image:linear-gradient(rgba(30,43,38,.93),rgba(30,43,38,.93)),url(../pattern.svg);background-size:auto,80px 80px}
+.top{background:#1e2b26;color:#efe9da;font-size:14px}
+.top .w{padding-top:9px;padding-bottom:9px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.top a{color:#efe9da;text-decoration:none;margin-left:22px}
+header{border-bottom:1px solid #e6dcc4}
+header .w{padding-top:20px;padding-bottom:20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:#1e2b26}
+.brand b{display:block;font-family:'Cormorant Garamond',serif;font-size:25px;line-height:1.1}
+.brand small{display:block;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#6f5620}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px;font-size:16px}
+nav a{text-decoration:none;color:#1e2b26}
+.dd{position:relative}
+.dd>a:after{content:" ▾";font-size:12px;color:#a8873a}
+.dd .menu{display:none;position:absolute;top:100%;left:-14px;min-width:240px;background:#fff;border:1px solid #e6dcc4;border-top:2px solid #a8873a;padding:8px 0;z-index:20;box-shadow:0 10px 24px rgba(30,43,38,.12)}
+.dd:hover .menu,.dd:focus-within .menu{display:block}
+.dd .menu a{display:block;padding:10px 20px;font-size:16px;white-space:nowrap}
+.dd .menu a:hover{background:#f5f1e6}
+nav a.cta{color:#fbf8f1;background:#2f5d4a;padding:11px 22px;border-radius:2px;font-weight:600}
+.hero{min-height:620px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(251,248,241,.97) 0%,rgba(251,248,241,.88) 34%,rgba(251,248,241,0) 62%),url(../img/hero.webp) center/cover no-repeat,#efe6cf}
+.hero .w,.serv .w{width:100%}
+.hero .in{max-width:560px;padding:80px 0}
+.hero h1{font-size:68px;line-height:1.04;margin:0 0 22px}
+.hero p.lead{margin:0 0 34px;font-size:20px;line-height:1.6;font-weight:300;color:#3a3f3b}
+.rule{width:64px;height:2px;background:#a8873a;margin-bottom:26px}
+.band{height:26px;border-top:1px solid #e6dcc4;border-bottom:1px solid #e6dcc4}
+section.s{padding:96px 0 88px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px}
+.card{text-decoration:none;color:inherit;background:#fff;border:1px solid #e6dcc4;display:flex;flex-direction:column}
+.ph{width:100%;height:230px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-size:14px;color:#6f5620;background:linear-gradient(135deg,#efe6cf,#e2d4ab);font-style:italic;background-size:cover;background-position:center}
+.card .b{padding:30px 32px 34px;display:flex;flex-direction:column;gap:12px}
+.card h3{font-size:30px}
+.card p{margin:0;font-size:17px;line-height:1.6;color:#4a4f4b}
+.card .go{margin-top:8px;color:#2f5d4a;font-weight:600}
+.serm .w{padding-top:88px;padding-bottom:88px;display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start;color:#efe9da}
+.serm h2{color:#fbf8f1;margin-bottom:18px}
+.serm .eyebrow{color:#d8c48f}
+.serm p{margin:0 0 28px;font-size:18px;line-height:1.65;font-weight:300}
+.serm .btn3{display:inline-block;border:1px solid #d8c48f;color:#fbf8f1;text-decoration:none;padding:14px 28px;font-weight:600;border-radius:2px}
+.serm .list{flex:1.4 1 520px;display:flex;flex-direction:column}
+.serm .list a{text-decoration:none;color:#fbf8f1;padding:26px 0;border-top:1px solid rgba(216,196,143,.45);display:flex;flex-direction:column;gap:8px}
+.serm .list a:last-child{border-bottom:1px solid rgba(216,196,143,.45)}
+.serm .list small{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#d8c48f}
+.serm .list span{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;line-height:1.2}
+.faq{display:flex;flex-wrap:wrap;gap:64px;padding-top:96px;padding-bottom:96px}
+.faq .q a{display:flex;justify-content:space-between;gap:20px;padding:20px 0;border-top:1px solid #e6dcc4;text-decoration:none;color:#1e2b26;font-size:20px}
+.faq .q a:last-of-type{border-bottom:1px solid #e6dcc4}
+.faq .q a i{color:#a8873a;font-style:normal}
+figure{margin:0;border:1px solid #e6dcc4;padding:44px 40px;text-align:center}
+blockquote{margin:0 0 18px;font-family:'Cormorant Garamond',serif;font-size:36px;line-height:1.25;color:#1e2b26;font-style:italic}
+figcaption{font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:#6f5620}
+.box{background:#fff;border:1px solid #e6dcc4;padding:32px 34px;display:flex;flex-direction:column;gap:12px}
+.box h3{font-size:28px}.box p{margin:0;font-size:17px;line-height:1.6;color:#4a4f4b}
+.lib{background:#f5f1e6;border-top:1px solid #e6dcc4;border-bottom:1px solid #e6dcc4}
+.lib .w{padding-top:88px;padding-bottom:88px}
+.libhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:44px}
+.books{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px}
+.book{text-decoration:none;color:inherit;display:flex;gap:22px;align-items:center;background:#fff;border:1px solid #e6dcc4;padding:24px}
+.cover{width:92px;height:132px;flex:none;border-left:6px solid #a8873a;display:flex;align-items:center;justify-content:center;padding:10px;color:#f5f1e6;font-family:'Cormorant Garamond',serif;font-size:14px;text-align:center;line-height:1.15}
+.book b{display:block;font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;color:#1e2b26;line-height:1.2;margin-bottom:6px}
+.book small{font-size:15px;color:#5a5f5b}
+.serv{min-height:460px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(245,241,230,.97) 0%,rgba(245,241,230,.9) 38%,rgba(245,241,230,0) 66%),url(../img/servizio.webp) center/cover no-repeat,#e8dcb8}
+.serv .in{max-width:520px;padding:72px 0}
+.serv p{margin:0 0 26px;font-size:18px;line-height:1.65;font-weight:300;color:#3a3f3b}
+.where{text-align:center;padding-top:96px;padding-bottom:96px}
+.where>p{margin:0 auto 36px;max-width:640px;font-size:18px;line-height:1.6;color:#4a4f4b}
+.cities{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:980px;margin:0 auto 40px}
+.cities span{padding:9px 18px;border:1px solid #e6dcc4;background:#fff;font-size:16px}
+.cta2{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+footer{color:#d9d3c3}
+footer .g{padding-top:72px;padding-bottom:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px}
+footer .g div{display:flex;flex-direction:column;gap:10px;font-size:16px}
+footer .g strong{font-family:'Cormorant Garamond',serif;font-size:26px;color:#fbf8f1}
+footer .g small{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#d8c48f}
+footer .g a{color:#efe9da;text-decoration:none}
+footer .bot{padding-top:22px;padding-bottom:30px;border-top:1px solid rgba(216,196,143,.35);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px}
+footer .bot a{color:#d9d3c3;margin-left:20px}
+.note{background:#fff3cd;color:#5c4a00;font-size:14px;padding:10px 32px;text-align:center;border-bottom:1px solid #e6d28a}
+
+.crumbs{max-width:980px;margin:0 auto;padding:18px 16px 0;font-size:15px;color:#6f5620}.crumbs a{text-decoration:none}
+</style>
+</head><body>
+<div class="note">Bozza di design per revisione – non è il sito pubblicato.</div>
+<div class="top"><div class="w"><span>Comunità Musulmana Ahmadiyya in Italia</span><span><a href="#">Numero verde 800 598 005</a><a href="#">WhatsApp +39 051 199 00 451</a><a href="#">contatti@alislam.it</a></span></div></div>
+
+<header><div class="w">
+<a href="../index.html" class="brand">
+<svg width="46" height="46" viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="#a8873a" stroke-width="3"><path d="M40 6 L50 30 L74 40 L50 50 L40 74 L30 50 L6 40 L30 30 Z"/><path d="M16 16 L40 25 L64 16 L55 40 L64 64 L40 55 L16 64 L25 40 Z"/></g><circle cx="40" cy="40" r="8" fill="#2f5d4a"/></svg>
+<span><b>Comunità Musulmana Ahmadiyya</b><small>in Italia · dal 1889</small></span></a>
+<nav aria-label="Menu principale"><a href="#">Conoscere l’Islam</a><a href="#">Chi siamo</a><a href="#">Domande e risposte</a><a href="#">Sermoni del Venerdì</a><a href="#">Libri</a><span class="dd"><a href="">Dipartimenti</a><span class="menu"><a href="waqf-e-nau.html">Waqf-e-Nau</a><a href="">Tutti i dipartimenti</a></span></span><a href="#">Notizie ed eventi</a><a href="#" class="cta">Parliamone</a></nav>
+</div></header>
+<div class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Dipartimenti</a> › Waqf-e-Nau</div>
+<!-- Waqf-e-Nau Italia 2026 – self-contained block for WordPress (Custom HTML block). All styles are scoped to .wn -->
+<style>
+.wn{--g:#153963;--gold:#d8b674;--cream:#f5f7fb;--dark:#172c44;font-family:'Source Sans 3',system-ui,sans-serif;color:var(--dark);background:var(--cream);line-height:1.6;max-width:980px;margin:0 auto;padding:0 0 30px}
+.wn *{box-sizing:border-box}
+.wn.ur{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1}
+.wn .hd{background:#102c4c;color:#fff;padding:clamp(18px,4vw,42px);border-radius:0 0 20px 20px}
+.wn .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:24px;align-items:center}
+.wn .hero-brand{display:flex;align-items:center;gap:18px}
+.wn .logo{width:clamp(70px,12vw,110px);height:auto;flex:none;border-radius:50%;background:white}
+.wn .banner{width:100%;height:auto;display:block;border-radius:12px}
+.wn .hd h2{margin:0 0 4px;font-size:clamp(1.4rem,4vw,2.3rem);line-height:1.25;color:#fff;border:0}
+.wn .hd p{margin:0;color:#dce7f4}
+.wn .hero-tools{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:20px}
+.wn .cd{display:inline-block;background:var(--gold);color:#142b47;padding:5px 13px;border-radius:20px;font-weight:700}
+.wn .lg{display:flex;flex-wrap:wrap;gap:8px}
+.wn button{font:inherit;cursor:pointer;min-height:44px}
+.wn .lg button{border:1px solid #bdd0e6;background:transparent;color:#fff;padding:5px 14px;border-radius:20px}
+.wn .lg button.on{background:var(--gold);border-color:var(--gold);color:#142b47}
+.wn .tabs{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:12px clamp(12px,3vw,24px);position:sticky;top:var(--wp-admin--admin-bar--height,0px);background:var(--cream);z-index:5;border-bottom:1px solid #d5dfec}
+.wn .tabs button{border:1px solid #a5b7cd;background:#fff;color:var(--g);padding:7px 14px;border-radius:8px}
+.wn .tabs button.on{background:var(--g);color:#fff;border-color:var(--g)}
+.wn :focus-visible{outline:3px solid #916112;outline-offset:3px}
+.wn .hd :focus-visible{outline-color:#f5d691}
+.wn .pane{scroll-margin-top:90px;overflow-wrap:anywhere}
+.wn .quick{display:flex;gap:8px;flex-wrap:wrap}
+.wn .quick .btn{margin:0}
+.wn .quick .btn.secondary{background:#fff;color:var(--g)!important;border:1px solid var(--g)}
+.wn .pane{display:none;padding:6px 18px}.wn .pane.on{display:block}
+.wn h3{color:var(--g);border-bottom:2px solid var(--gold);padding-bottom:3px;margin:26px 0 10px}
+.wn .card{background:#fff;border:1px solid #d5dfec;border-radius:10px;padding:14px 16px;margin:10px 0}
+.wn .note{background:#fff;border-inline-start:4px solid var(--gold);padding:10px 14px;border-radius:6px;margin:12px 0}
+.wn .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px}
+.wn .big{font-size:2rem;font-weight:700;color:var(--g);line-height:1.1}
+.wn input[type=date],.wn select{font:inherit;padding:8px 10px;border:1px solid #9bacc2;border-radius:8px;background:#fff}
+.wn .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.wn .or{color:#6b6b60}
+.wn ul.ck{list-style:none;padding:0;margin:6px 0}
+.wn ul.ck li{padding:6px 0;border-bottom:1px dashed #d5dfec}
+.wn ul.ck label{cursor:pointer;display:flex;gap:10px;align-items:flex-start}
+.wn ul.ck input{margin-top:6px;transform:scale(1.25)}
+.wn .bar{height:12px;background:#e8e0c8;border-radius:8px;overflow:hidden}
+.wn .bar i{display:block;height:100%;background:var(--g);width:0;transition:width .3s}
+.wn .split{display:flex;height:34px;border-radius:8px;overflow:hidden;color:#fff;font-weight:700;text-align:center}
+.wn .split span{display:flex;align-items:center;justify-content:center}
+.wn table{border-collapse:collapse;width:100%}
+.wn th,.wn td{border:1px solid #d5dfec;padding:7px 10px;text-align:start;background:#fff}
+.wn th{background:#efe6cf}
+.wn a{color:var(--g)}
+.wn .btn{display:inline-flex;align-items:center;min-height:44px;border:1px solid transparent;background:var(--g);color:#fff!important;text-decoration:none;padding:8px 16px;border-radius:8px;margin:4px 6px 4px 0}
+.wn .opt{display:block;width:100%;text-align:start;background:#fff;border:1px solid #9bacc2;border-radius:8px;padding:9px 12px;margin:6px 0;color:var(--dark)}
+.wn .opt:disabled{cursor:default;opacity:1}.wn .opt.ok{background:#dcefe3;border-color:#267047}.wn .opt.no{background:#f6dcd6;border-color:#b3402a}
+.wn details{background:#fff;border:1px solid #d5dfec;border-radius:8px;padding:8px 14px;margin:8px 0}
+.wn summary{cursor:pointer;font-weight:600}
+.wn .tag{display:inline-block;background:#efe6cf;border-radius:12px;padding:1px 10px;font-size:.85rem;margin-inline-end:6px}
+@media(max-width:650px){
+ .wn .hero{grid-template-columns:1fr;gap:14px}
+ .wn .banner{max-height:170px;object-fit:cover}
+ .wn .tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));position:static}
+ .wn .tabs button{padding:5px;line-height:1.25;white-space:normal}
+ .wn .pane{padding-inline:12px;scroll-margin-top:12px}
+ .wn .row{display:grid;align-items:start}
+ .wn input[type=date],.wn select{min-height:44px;max-width:100%}
+ .wn th,.wn td{padding:6px;font-size:.94rem}
+ .wn .quick{display:grid}
+}
+@media(prefers-reduced-motion:reduce){.wn .bar i{transition:none}}
+@media print{.wn .tabs,.wn .lg,.wn .noprint{display:none!important}.wn .pane{display:block!important}}
+</style>
+<div class="wn" id="wn" lang="it">
+<div class="hd">
+<div class="hero">
+ <div class="hero-brand"><img class="logo" src="https://ataulwasihtariq.github.io/waqfe-nau/assets/branding/waqf-e-nau-italia-logo.webp" width="300" height="300" alt="Waqf-e-Nau"><div><h2 data-i="title">Waqf-e-Nau Italia</h2><p data-i="sub"></p></div></div>
+ <img class="banner" src="https://ataulwasihtariq.github.io/waqfe-nau/assets/branding/waqf-e-nau-italia-banner.webp" width="1600" height="562" alt="">
+</div>
+<div class="hero-tools"><div class="cd" id="wn-cd"></div>
+<div class="lg"><button type="button" lang="it" data-l="it">Italiano</button><button type="button" lang="en" data-l="en">English</button><button type="button" lang="ur" data-l="ur">اردو</button></div></div>
+</div>
+<nav class="tabs" id="wn-tabs"></nav>
+
+<section class="pane" id="p-home"></section>
+<section class="pane" id="p-child"></section>
+<section class="pane" id="p-prog"></section>
+<section class="pane" id="p-jaiza"></section>
+<section class="pane" id="p-quiz"></section>
+<section class="pane" id="p-teach"></section>
+</div>
+<script>
+(function(){
+var root=document.getElementById('wn');
+var REF=new Date(2026,8,1); /* 1 Sept 2026: age reference date */
+var IJTEMA=new Date(2026,10,22); /* Ijtema: Sunday 22 Nov 2026 - change here if needed */
+var LINKS={p1:'https://files.alislam.cloud/pdf/Syllabus-WN-Part-1.pdf',p2:'https://new.alislam.org/library/books/syllabus-waqf-e-nau-part-2-years-7-15',p3:'https://files.alislam.cloud/pdf/Syllabus-WN-Part-3.pdf'};
+var NISAB_IT='https://ataulwasihtariq.github.io/waqfe-nau/materiali/nisab-italiano.pdf';
+var NISAB_PAGES={3:12,4:14,5:15,6:16,7:19,8:20,9:22,10:23,11:27,12:29,13:32,14:38,15:43,16:46,17:47,18:49,19:49,20:51,21:51};
+var HADITH_PAGES={7:19,8:21,9:22,10:24,11:27,12:29,13:33,14:38,15:43,17:48,18:49,19:49,20:51};
+var NISAB_LABEL=t('Italian Nisab (PDF)','Nisab in italiano (PDF)','اطالوی نصاب (PDF)');
+var JAIZA_DIR='https://ataulwasihtariq.github.io/waqfe-nau/materiali/jaiza-2026/';
+var JAIZA_OPEN=t('Open Jaiza form (PDF)','Apri il modulo Jaiza (PDF)','جائزے کا فارم کھولیں (PDF)');
+var JAIZA_ALL=t('All Jaiza forms by age (PDF)','Tutti i moduli Jaiza per età (PDF)','عمر کے مطابق تمام جائزہ فارم (PDF)');
+var IJTEMA_PROGRAM=t('Ijtema timetable · Sunday 22 November (PDF)','Programma dell’Ijtema · domenica 22 novembre (PDF)','اجتماع کا پروگرام · اتوار 22 نومبر (PDF)');
+function documentLink(path,label,language){
+ return '<a class="btn" href="'+path+'" target="_blank" rel="noopener"'+(language?' lang="'+language+'"':'')+'>'+label+'</a>';
+}
+function nisabLink(page,label){
+ return '<a class="btn" href="'+NISAB_IT+(page?'#page='+page:'')+'" target="_blank" rel="noopener" lang="it">'+label+'</a>';
+}
+function t(en,it,ur){return {en:en,it:it,ur:ur}}
+var S={ /* surah names */
+baq:t('Al-Baqarah','Al-Baqarah','البقرہ'),ak:t('Ayatul Kursi','Ayatul Kursi','آیت الکرسی'),fil:t('Al-Fil','Al-Fil','الفیل'),
+ali:t("Ali 'Imran",'Ali Imran','آل عمران'),ana:t("Al-An'am",'Al-An\'am','الانعام'),lah:t('Al-Lahab','Al-Lahab','اللہب'),qur:t('Quraish','Quraysh','قریش'),
+nas:t('An-Nasr','An-Nasr','النصر'),kaf:t('Al-Kafirun','Al-Kafirun','الکافرون'),mao:t("Al-Ma'un",'Al-Ma\'un','الماعون'),rad:t("Ar-Ra'd",'Ar-Ra\'d','الرعد'),
+nah:t('An-Nahl','An-Nahl','النحل'),isr:t("Bani Isra'il",'Bani Isra\'il','بنی اسرائیل'),saj:t('Ha-Mim As-Sajdah','Ha-Mim As-Sajdah','حم السجدہ'),
+qar:t("Al-Qari'ah",'Al-Qari\'ah','القارعۃ'),tak:t('At-Takathur','At-Takathur','التکاثر'),qad:t('Al-Qadr','Al-Qadr','القدر'),zil:t('Az-Zilzal','Az-Zilzal','الزلزال'),
+tin:t('At-Tin','At-Tin','التین'),ins:t('Al-Inshirah','Al-Inshirah','الانشراح'),duh:t('Ad-Duha','Ad-Duha','الضحیٰ'),kah:t('Al-Kahf','Al-Kahf','الکہف'),
+ahz:t('Al-Ahzab','Al-Ahzab','الاحزاب'),has:t('Al-Hashr','Al-Hashr','الحشر'),gha:t('Al-Ghashiyah','Al-Ghashiyah','الغاشیہ'),ala:t("Al-A'la",'Al-A\'la','الاعلیٰ'),
+bur:t('Al-Buruj','Al-Buruj','البروج'),tar:t('At-Tariq','At-Tariq','الطارق'),dah:t('Ad-Dahr','Ad-Dahr','الدہر'),saf:t('As-Saff','As-Saff','الصف'),
+jum:t("Al-Jumu'ah",'Al-Jumu\'ah','الجمعہ'),rah:t('Ar-Rahman','Ar-Rahman','الرحمٰن')};
+var SURAH_NUMBER={baq:2,ak:2,fil:105,ali:3,ana:6,lah:111,qur:106,nas:110,kaf:109,mao:107,rad:13,nah:16,isr:17,saj:41,qar:101,tak:102,qad:97,zil:99,tin:95,ins:94,duh:93,kah:18,ahz:33,has:59,gha:88,ala:87,bur:85,tar:86,dah:76,saf:61,jum:62,rah:55};
+function tilawatLink(number,label){
+ return '<a href="https://tilaw.at/'+number+':1" target="_blank" rel="noopener">'+label+'</a>';
+}
+function H(k,v){return {s:S[k],v:v,n:SURAH_NUMBER[k]}}
+var HIFZ={
+8:[H('baq','1–5'),H('ak',''),H('baq','6–10')],
+9:[H('baq','11–17'),H('fil','')],
+10:[H('baq','1–17'),H('ak','')],
+12:[H('ali','26–28, 191–195'),H('ana','96–109')],
+13:[H('lah',''),H('qur',''),H('nas',''),H('kaf',''),H('mao',''),H('rad','9–14'),H('nah','67–71'),H('isr','79–85'),H('saj','31–36')],
+14:[H('qar',''),H('tak',''),H('qad',''),H('zil',''),H('tin',''),H('ins',''),H('duh',''),H('kah','1–11, 103–111'),H('ahz','70–74'),H('has','19–25')],
+15:[H('gha',''),H('ala','')],16:[H('bur','')],17:[H('tar','')],18:[H('dah','')],19:[H('saf','')],20:[H('jum',''),H('rah','')]};
+var NAMAZ={
+7:[t('Adhan; Wudu and its prayer; the method of Salat','Adhan; Wudu e la sua preghiera; il modo di eseguire la Salat','اذان؛ وضو اور اس کی دعا؛ نماز کا طریقہ')],
+8:[t('Complete Salat with translation','Salat completa con traduzione','مکمل نماز مع ترجمہ')],
+9:[t('Dua-e-Qunoot; funeral prayer; Tayammum; prayer for travelling','Dua-e-Qunoot; preghiera funebre; Tayammum; preghiera per il viaggio','دعائے قنوت؛ نمازِ جنازہ؛ تیمم؛ سفر کی دعا')],
+10:[t('The 9 prayers (duas) of the Nisab; full Salat revision','Le 9 preghiere (dua) del Nisab; ripasso della Salat completa','نصاب کی 9 دعائیں؛ مکمل نماز کی دہرائی')],
+11:[t('Prayers on entering and leaving home; prayer after the Adhan','Preghiere per entrare e uscire di casa; preghiera dopo l\'Adhan','گھر میں داخل ہونے اور نکلنے کی دعا؛ اذان کے بعد کی دعا')]};
+var NAMAZ12=[t('Complete Salat with translation, word by word, from Takbir to Salam','Salat completa con traduzione, parola per parola, dal Takbir al Salam','مکمل نماز مع ترجمہ، لفظ بہ لفظ، تکبیر سے سلام تک'),t('Adhan; Dua-e-Qunoot and funeral prayer (revision)','Adhan; Dua-e-Qunoot e preghiera funebre (ripasso)','اذان؛ دعائے قنوت اور نمازِ جنازہ (دہرائی)')];
+var NAMAZX={12:t('Prayer for a journey; prayer when visiting the sick','Preghiera per il viaggio; preghiera per visitare un malato','سفر کی دعا؛ عیادتِ مریض کی دعا'),15:t("The Qur'anic prayers listed in the Nisab",'Le preghiere coraniche indicate nel Nisab','نصاب میں درج قرآنی دعائیں')};
+var HAD={
+7:t('2 hadith · 4 Names of Allah','2 hadith · 4 Nomi di Allah','2 احادیث · اللہ کے 4 نام'),
+8:t('2 hadith · 6 Names of Allah','2 hadith · 6 Nomi di Allah','2 احادیث · اللہ کے 6 نام'),
+9:t('2 hadith · 5 Names of Allah','2 hadith · 5 Nomi di Allah','2 احادیث · اللہ کے 5 نام'),
+10:t('10 hadith · 15 Names of Allah (including those of ages 7, 8, 9)','10 hadith · 15 Nomi di Allah (compresi quelli dei 7, 8, 9 anni)','10 احادیث · اللہ کے 15 نام (7، 8، 9 سال کے نام سمیت)'),
+11:t('10 hadith · Names of Allah for age 11','10 hadith · Nomi di Allah per i 11 anni','10 احادیث · 11 سال کے اللہ کے نام'),
+12:t('10 hadith · Names of Allah for age 12','10 hadith · Nomi di Allah per i 12 anni','10 احادیث · 12 سال کے اللہ کے نام'),
+13:t('7 hadith · Names of Allah for age 13','7 hadith · Nomi di Allah per i 13 anni','7 احادیث · 13 سال کے اللہ کے نام'),
+14:t('Hadith of the Nisab + Forty Gems 1–20 · Names of Allah for age 14','Hadith del Nisab + Forty Gems 1–20 · Nomi di Allah per i 14 anni','نصاب کی احادیث + چالیس جواہر پارے 1–20 · 14 سال کے اللہ کے نام'),
+15:t('Hadith on the Nisab page for age 15','Hadith della pagina del Nisab per i 15 anni','نصاب میں 15 سال کے صفحے کی احادیث'),
+17:t('The «Kaifa antum» hadith','Il hadith «Kaifa antum»','حدیث «کیف انتم»'),
+18:t('Revision of all hadith above','Ripasso di tutti i hadith precedenti','اوپر کی تمام احادیث کی دہرائی'),19:null,20:null};
+HAD[19]=HAD[18];HAD[20]=HAD[18];
+var QAS={
+13:t('Couplets 1–20','Distici 1–20','اشعار 1–20'),14:t('Revise couplets 1–20','Ripasso dei distici 1–20','اشعار 1–20 کی دہرائی'),
+15:t('Couplets 21–30','Distici 21–30','اشعار 21–30'),16:t('Couplets 31–40 · first 9 couplets of «Salam ba-Huzoor»','Distici 31–40 · primi 9 distici di «Salam ba-Huzoor»','اشعار 31–40 · «سلام بحضور» کے پہلے 9 اشعار'),
+17:t('Couplets 41–50','Distici 41–50','اشعار 41–50'),18:t('Couplets 51–60','Distici 51–60','اشعار 51–60'),19:t('Couplets 51–60','Distici 51–60','اشعار 51–60'),20:t('Couplets 61–70','Distici 61–70','اشعار 61–70')};
+var PRES=t('Presentation on the book «Messaggio di Pace» (Payghām-e Ṣulḥ): prepared at home, worth 10 of the 70 points','Presentazione sul libro «Messaggio di Pace» (Payghām-e Ṣulḥ): preparata a casa, vale 10 dei 70 punti','کتاب «پیغامِ صلح» پر پریزنٹیشن: گھر پر تیار کریں، 70 میں سے 10 نمبر');
+var I={
+it:{title:'Waqf-e-Nau Italia',sub:'Programma 2026 · Nisab · Jaiza · Ijtema',tabs:['Inizio','Per età','Programma','Jaiza','Quiz e domande','Insegnanti'],
+ cd0:'Ijtema: ',cdd:' giorni',cdt:'Oggi è l\'Ijtema!',cdp:'Ijtema concluso',
+ h1:'Benvenuti',h2:'Questo sito spiega, in modo semplice, che cosa deve preparare ogni bambino e ogni ragazza/o Waqf-e-Nau quest\'anno e come si svolge la Jaiza all\'Ijtema.',
+ h3:'Tre passi per i genitori',s1:'Trovate l\'età di vostro figlio o vostra figlia al 1° settembre 2026 (scheda «Per età»).',s2:'Guardate che cosa deve preparare e segnatelo man mano.',s3:'Ripassate a casa 10 minuti al giorno. Il bambino partecipa alla sua classe settimanale.',
+ hb:'Vai a «Per età»',
+ priv:'Questo sito non contiene dati personali: nessun nome, numero di telefono o elenco di bambini. I progressi che segnate restano solo sul vostro dispositivo.',
+ age:'Che cosa deve preparare?',ageq:'Data di nascita',ageor:'oppure scegliete l\'età',ageref:'Conta l\'età compiuta al 1° settembre 2026, anche se il compleanno cade prima dell\'Ijtema.',
+ ageis:'Età di riferimento: ',years:' anni',none:'Nessun modulo quest\'anno (nato dopo il 1° settembre 2023).',over:'Oltre i 21 anni: seguire il Nisab Parte 3.',
+ cHifz:'Corano (Hifz)',cNamaz:'Namaz e preghiere',cHad:'Hadith e Nomi di Allah',cQas:'Qaseeda',cOther:'Altro',
+ verses:'versetti ',noData:'Per questa età il programma dettagliato è nel Nisab ufficiale (indicato sotto). Chiedete all\'insegnante.',
+ prog:'Preparazione',of:' completato',print:'Stampa questa pagina',reset:'Azzera segni',
+ form:'Modulo della Jaiza',formtxt:'A · Nisab di quest\'anno (70 punti) · B · Ripasso (25 punti) · C · Pratica e condotta (5 punti).',
+ nis:'Testi del Nisab ufficiale (gratuiti)',p1:'Parte 1 (1–7 anni)',p2:'Parte 2 (7–15 anni)',p3:'Parte 3 (15–21 anni e oltre)',
+ pg:'Programma delle classi 2026',pg1:'Periodo',pg1t:'Dal 7 settembre al 20 novembre 2026: 11 settimane.',pg2:'Settimane 1–9',pg2t:'Contenuti nuovi del Nisab della propria età.',pg3:'Settimana 10',pg3t:'Ripasso, compresi gli anni precedenti.',pg4:'Settimana 11',pg4t:'Prova generale della Jaiza.',
+ fmt:'Come funzionano le classi',fmt1:'Una classe a settimana da 30 minuti per ogni ragazzo/a, in un piccolo gruppo (circa 5–6) guidato da un insegnante.',fmt2:'Ogni insegnante concorda l\'orario con il proprio gruppo e lo mantiene.',fmt3:'Ogni settimana si invia un messaggio vocale WhatsApp con il compito, entro domenica sera.',fmt4:'Se si perde una lezione, i genitori aiutano a recuperare quella parte a casa.',
+ ij:'Giornata dell\'Ijtema',ij0:'Il programma dettagliato sarà comunicato dagli organizzatori. Struttura prevista:',ij1:'Apertura con breve Tilawat',ij2:'Jaiza a gruppi, con quattro insegnanti esaminatori',ij3:'Incontri e laboratori: tabligh, significato del Waqf e Waqf-e-Arzi, tempo, disciplina e social media, amore per il Khilafat e la Jama\'at, rapporto vivo con Allah',ij4:'Pranzo, namaz e merenda',ij5:'Presentazioni, discorso conclusivo e dua',
+ jz:'La Jaiza',jz0:'La Jaiza è la verifica dell\'Ijtema. Vale per ragazzi e ragazze, con un modulo per ogni età.',jzA:'A · Nisab di quest\'anno',jzB:'B · Ripasso (domande a sorpresa)',jzC:'C · Pratica e condotta',
+ jzC0:'preghiere quotidiane, recita del Corano, comportamento',jzB0:'poche domande sul programma degli anni precedenti',jzA0:'tutto il programma ufficiale della propria età',
+ gr:'Giudizio finale',g1:'Mumtaz',g2:'Molto buono',g3:'Buono',g4:'Da esercitare ancora',
+ tab:'Tabella: data di nascita → modulo',bd:'Data di nascita',fm:'Modulo',nomod:'nessun modulo',
+ quiz:'Quiz per i genitori',quiz0:'Sei domande rapide per controllare di aver capito come funziona.',next:'Avanti',again:'Ricomincia',score:'Punteggio: ',faq:'Domande frequenti',
+ tc:'Per gli insegnanti',tc0:'Ogni lezione segue la stessa routine. Non aggiungere né cambiare contenuti: insegna solo ciò che è indicato per l\'età.',
+ r0:'Routine di 30 minuti',r1:'2 min · presenze, tutti con microfono spento e telecamera accesa',r2:'10 min · esercizio di gruppo: l\'insegnante recita con il testo a schermo, i ragazzi ripetono; poi 2–3 ragazzi insieme',r3:'15 min · ascolto di 4–5 ragazzi uno alla volta (circa 2 minuti ciascuno), con voto; ogni settimana ragazzi diversi',r4:'3 min · compito per ogni età, poi scritto nel gruppo WhatsApp',
+ mk:'Scala di valutazione',m4:'4 · Fluente: nessun errore, nessun aiuto',m3:'3 · Piccoli errori: 1–2 sbavature, si corregge da solo',m2:'2 · Con aiuto: ha bisogno di essere sollecitato',m1:'1 · Parziale: conosce solo una parte',m0:'0 · Non pronto: non l\'ha ancora imparato',
+ rl:'Regole',rl1:'Mai confrontare i ragazzi davanti al gruppo: lodare l\'impegno.',rl2:'Dopo ogni lezione: due righe nel gruppo, con chi era assente e chi è indietro e su cosa.',rl3:'Se non si può tenere la lezione, avvisare gli organizzatori almeno un giorno prima.'},
+en:{title:'Waqf-e-Nau Italy',sub:'2026 programme · Nisab · Jaiza · Ijtema',tabs:['Start','By age','Programme','Jaiza','Quiz & questions','Teachers'],
+ cd0:'Ijtema: ',cdd:' days to go',cdt:'The Ijtema is today!',cdp:'Ijtema finished',
+ h1:'Welcome',h2:'This site explains in a simple way what every Waqf-e-Nau boy and girl has to prepare this year, and how the Jaiza works at the Ijtema.',
+ h3:'Three steps for parents',s1:'Find your child\'s age on 1 September 2026 (tab «By age»).',s2:'See what they must prepare and tick it off as you go.',s3:'Revise at home 10 minutes a day. Your child attends their weekly class.',
+ hb:'Go to «By age»',
+ priv:'This site holds no personal data: no names, phone numbers or lists of children. The progress you tick stays only on your own device.',
+ age:'What must my child prepare?',ageq:'Date of birth',ageor:'or choose the age',ageref:'The age that counts is the age completed on 1 September 2026, even if the birthday falls before the Ijtema.',
+ ageis:'Reference age: ',years:' years',none:'No form this year (born after 1 September 2023).',over:'Over 21: follow Nisab Part 3.',
+ cHifz:'Quran (Hifz)',cNamaz:'Namaz and prayers',cHad:'Hadith and Names of Allah',cQas:'Qaseeda',cOther:'Other',
+ verses:'verses ',noData:'For this age the detailed programme is in the official Nisab (linked below). Ask the class teacher.',
+ prog:'Preparation',of:' done',print:'Print this page',reset:'Clear ticks',
+ form:'Jaiza form',formtxt:'A · This year\'s Nisab (70 points) · B · Revision (25 points) · C · Practice and conduct (5 points).',
+ nis:'Official Nisab texts (free)',p1:'Part 1 (ages 1–7)',p2:'Part 2 (ages 7–15)',p3:'Part 3 (ages 15–21 and over)',
+ pg:'2026 class programme',pg1:'Term',pg1t:'7 September to 20 November 2026: 11 weeks.',pg2:'Weeks 1–9',pg2t:'New content from the Nisab for the child\'s age.',pg3:'Week 10',pg3t:'Revision, including earlier years.',pg4:'Week 11',pg4t:'Mock Jaiza.',
+ fmt:'How the classes work',fmt1:'One 30-minute class a week for every boy and girl, in a small group (about 5–6) led by a teacher.',fmt2:'Each teacher agrees the time with their own group and keeps it.',fmt3:'Each week a WhatsApp voice note with the homework is sent, by Sunday evening.',fmt4:'If a lesson is missed, parents help to catch up on that part at home.',
+ ij:'Ijtema day',ij0:'The detailed timetable will be announced by the organisers. Planned structure:',ij1:'Opening with a short Tilawat',ij2:'Jaiza in groups, with four examining teachers',ij3:'Seminars and workshops: tabligh, the meaning of Waqf and Waqf-e-Arzi, time, discipline and social media, love for Khilafat and the Jama\'at, a living connection with Allah',ij4:'Lunch, namaz and snacks',ij5:'Presentations, concluding speech and dua',
+ jz:'The Jaiza',jz0:'The Jaiza is the assessment at the Ijtema. It is for boys and girls, with one form per age.',jzA:'A · This year\'s Nisab',jzB:'B · Revision (spot questions)',jzC:'C · Practice and conduct',
+ jzC0:'daily prayers, Quran recitation, behaviour',jzB0:'a few questions on earlier years\' content',jzA0:'the whole official programme for the child\'s age',
+ gr:'Final grade',g1:'Mumtaz',g2:'Very good',g3:'Good',g4:'Needs more practice',
+ tab:'Table: date of birth → form',bd:'Date of birth',fm:'Form',nomod:'no form',
+ quiz:'Quiz for parents',quiz0:'Six quick questions to check you have understood how it works.',next:'Next',again:'Start again',score:'Score: ',faq:'Frequently asked questions',
+ tc:'For teachers',tc0:'Every class follows the same routine. Do not add or change content: teach only what is listed for the age.',
+ r0:'30-minute routine',r1:'2 min · attendance, everyone muted, cameras on',r2:'10 min · group drill: the teacher recites with the text on screen, the boys repeat; then 2–3 boys together',r3:'15 min · hear 4–5 boys one at a time (about 2 minutes each) and mark them; different boys each week',r4:'3 min · homework for each age, then written in the WhatsApp group',
+ mk:'Marking scale',m4:'4 · Fluent: no mistakes, no help',m3:'3 · Small mistakes: 1–2 slips, corrects himself',m2:'2 · With help: needs prompting',m1:'1 · Partial: knows only part of it',m0:'0 · Not ready: has not learned it yet',
+ rl:'Rules',rl1:'Never compare boys in front of the group: praise effort.',rl2:'After every class: two lines in the group, who was absent and who is behind on what.',rl3:'If you cannot hold a class, tell the organisers at least a day before.'},
+ur:{title:'وقفِ نو اٹلی',sub:'پروگرام 2026 · نصاب · جائزہ · اجتماع',tabs:['آغاز','عمر کے مطابق','پروگرام','جائزہ','کوئز اور سوالات','اساتذہ'],
+ cd0:'اجتماع: ',cdd:' دن باقی',cdt:'آج اجتماع ہے!',cdp:'اجتماع مکمل ہوا',
+ h1:'خوش آمدید',h2:'یہ سائٹ آسان انداز میں بتاتی ہے کہ اس سال ہر واقفِ نو بچے اور بچی کو کیا تیار کرنا ہے اور اجتماع میں جائزہ کیسے ہوگا۔',
+ h3:'والدین کے لیے تین قدم',s1:'یکم ستمبر 2026 کو اپنے بچے کی عمر معلوم کریں («عمر کے مطابق» ٹیب)۔',s2:'دیکھیں کیا تیار کرنا ہے اور تیار ہونے پر نشان لگائیں۔',s3:'گھر پر روزانہ 10 منٹ دہرائی کروائیں۔ بچہ اپنی ہفتہ وار کلاس میں شریک ہو۔',
+ hb:'«عمر کے مطابق» دیکھیں',
+ priv:'اس سائٹ پر کوئی ذاتی معلومات نہیں: نہ نام، نہ فون نمبر، نہ بچوں کی فہرست۔ آپ جو نشان لگائیں وہ صرف آپ کے اپنے آلے میں رہتے ہیں۔',
+ age:'میرے بچے کو کیا تیار کرنا ہے؟',ageq:'تاریخِ پیدائش',ageor:'یا عمر منتخب کریں',ageref:'یکم ستمبر 2026 کو مکمل ہونے والی عمر شمار ہوگی، چاہے سالگرہ اجتماع سے پہلے آ جائے۔',
+ ageis:'حوالے کی عمر: ',years:' سال',none:'اس سال کوئی فارم نہیں (یکم ستمبر 2023 کے بعد پیدائش)۔',over:'21 سال سے اوپر: نصاب حصہ 3 کے مطابق۔',
+ cHifz:'قرآن (حفظ)',cNamaz:'نماز اور دعائیں',cHad:'احادیث اور اللہ کے نام',cQas:'قصیدہ',cOther:'دیگر',
+ verses:'آیات ',noData:'اس عمر کا تفصیلی پروگرام سرکاری نصاب میں ہے (نیچے لنک)۔ کلاس کے استاد سے پوچھیں۔',
+ prog:'تیاری',of:' مکمل',print:'یہ صفحہ پرنٹ کریں',reset:'نشان مٹائیں',
+ form:'جائزے کا فارم',formtxt:'الف · اس سال کا نصاب (70 نمبر) · ب · دہرائی (25 نمبر) · ج · عمل اور اخلاق (5 نمبر)۔',
+ nis:'سرکاری نصاب کی کتابیں (مفت)',p1:'حصہ 1 (1 تا 7 سال)',p2:'حصہ 2 (7 تا 15 سال)',p3:'حصہ 3 (15 تا 21 سال اور اس سے اوپر)',
+ pg:'کلاسوں کا پروگرام 2026',pg1:'مدت',pg1t:'7 ستمبر سے 20 نومبر 2026 تک: 11 ہفتے۔',pg2:'ہفتے 1 تا 9',pg2t:'بچے کی عمر کے نصاب کا نیا مواد۔',pg3:'ہفتہ 10',pg3t:'دہرائی، پچھلے سالوں سمیت۔',pg4:'ہفتہ 11',pg4t:'جائزے کی مشق۔',
+ fmt:'کلاسیں کیسے ہوتی ہیں',fmt1:'ہر بچے اور بچی کی ہفتے میں ایک کلاس، 30 منٹ کی، استاد کے ساتھ چھوٹے گروپ (تقریباً 5–6) میں۔',fmt2:'ہر استاد اپنے گروپ کے ساتھ وقت طے کرتا ہے اور اسی پر قائم رہتا ہے۔',fmt3:'ہر ہفتے ہوم ورک کا واٹس ایپ وائس نوٹ اتوار کی شام تک بھیجا جاتا ہے۔',fmt4:'کلاس چھوٹ جائے تو والدین گھر پر وہ حصہ پورا کروانے میں مدد کریں۔',
+ ij:'اجتماع کا دن',ij0:'تفصیلی ٹائم ٹیبل منتظمین بتائیں گے۔ متوقع ترتیب:',ij1:'مختصر تلاوت سے آغاز',ij2:'گروپوں میں جائزہ، چار اساتذہ ممتحن',ij3:'سیمینار اور ورکشاپس: تبلیغ، وقف اور وقفِ عارضی کا مفہوم، وقت، نظم و ضبط اور سوشل میڈیا، خلافت اور جماعت سے محبت، اللہ سے زندہ تعلق',ij4:'کھانا، نماز اور ناشتہ',ij5:'پریزنٹیشنز، اختتامی خطاب اور دعا',
+ jz:'جائزہ',jz0:'جائزہ اجتماع کا امتحان ہے۔ لڑکوں اور لڑکیوں دونوں کے لیے، ہر عمر کا الگ فارم۔',jzA:'الف · اس سال کا نصاب',jzB:'ب · دہرائی (اچانک سوالات)',jzC:'ج · عمل اور اخلاق',
+ jzC0:'روزانہ نمازیں، تلاوتِ قرآن، رویہ',jzB0:'پچھلے سالوں کے مواد سے چند سوال',jzA0:'بچے کی عمر کا پورا سرکاری نصاب',
+ gr:'آخری درجہ',g1:'ممتاز',g2:'بہت اچھا',g3:'اچھا',g4:'مزید مشق کی ضرورت',
+ tab:'جدول: تاریخِ پیدائش ← فارم',bd:'تاریخِ پیدائش',fm:'فارم',nomod:'کوئی فارم نہیں',
+ quiz:'والدین کے لیے کوئز',quiz0:'چھ مختصر سوال، تاکہ معلوم ہو کہ آپ نے طریقِ کار سمجھ لیا ہے۔',next:'اگلا',again:'دوبارہ شروع کریں',score:'نتیجہ: ',faq:'اکثر پوچھے جانے والے سوالات',
+ tc:'اساتذہ کے لیے',tc0:'ہر کلاس ایک ہی طریقے پر چلتی ہے۔ مواد میں اضافہ یا تبدیلی نہ کریں: صرف وہی پڑھائیں جو اس عمر کے لیے درج ہے۔',
+ r0:'30 منٹ کا طریقہ',r1:'2 منٹ · حاضری، سب کا مائیک بند، کیمرہ آن',r2:'10 منٹ · گروپ مشق: استاد سکرین پر متن کے ساتھ پڑھے، بچے دہرائیں؛ پھر 2–3 بچے مل کر',r3:'15 منٹ · 4–5 بچوں کو باری باری سنیں (ہر ایک تقریباً 2 منٹ) اور نمبر دیں؛ ہر ہفتے مختلف بچے',r4:'3 منٹ · ہر عمر کا ہوم ورک، پھر واٹس ایپ گروپ میں لکھیں',
+ mk:'نمبر دینے کا پیمانہ',m4:'4 · رواں: کوئی غلطی نہیں، مدد نہیں',m3:'3 · معمولی غلطیاں: 1–2 لغزشیں، خود درست کر لیتا ہے',m2:'2 · مدد کے ساتھ: یاد دلانا پڑتا ہے',m1:'1 · جزوی: صرف کچھ حصہ آتا ہے',m0:'0 · تیار نہیں: ابھی یاد نہیں کیا',
+ rl:'اصول',rl1:'گروپ کے سامنے بچوں کا موازنہ کبھی نہ کریں: محنت کی تعریف کریں۔',rl2:'ہر کلاس کے بعد گروپ میں دو سطریں: کون غیر حاضر تھا اور کون کس چیز میں پیچھے ہے۔',rl3:'کلاس نہ ہو سکے تو منتظمین کو کم از کم ایک دن پہلے بتائیں۔'}};
+var ROWS=[[3,'02/09/2022 – 01/09/2023'],[4,'02/09/2021 – 01/09/2022'],[5,'02/09/2020 – 01/09/2021'],[6,'02/09/2019 – 01/09/2020'],[7,'02/09/2018 – 01/09/2019'],[8,'02/09/2017 – 01/09/2018'],[9,'02/09/2016 – 01/09/2017'],[10,'02/09/2015 – 01/09/2016'],[11,'02/09/2014 – 01/09/2015'],[12,'02/09/2013 – 01/09/2014'],[13,'02/09/2012 – 01/09/2013'],[14,'02/09/2011 – 01/09/2012'],[15,'02/09/2010 – 01/09/2011'],[16,'02/09/2009 – 01/09/2010'],[17,'02/09/2008 – 01/09/2009'],[18,'02/09/2007 – 01/09/2008'],[19,'02/09/2006 – 01/09/2007'],[20,'02/09/2005 – 01/09/2006'],[21,'02/09/2004 – 01/09/2005']];
+var Q={
+it:[['Quale età conta per scegliere il modulo?',['L\'età al giorno dell\'Ijtema','L\'età compiuta al 1° settembre 2026','L\'età al 1° gennaio'],1],['Un bambino nato il 15 ottobre 2016 quale modulo guarda?',['9 anni','10 anni','11 anni'],0],['Quanti punti vale la parte A (Nisab di quest\'anno)?',['50','70','25'],1],['Qual è il giudizio per 78 punti?',['Mumtaz','Molto buono','Buono'],1],['Da che età c\'è la presentazione sul libro «Messaggio di Pace»?',['Da 9 anni','Da 11 anni','Da 13 anni'],2],['Entro quando si invia il messaggio vocale con il compito?',['Domenica sera','Venerdì mattina','Mercoledì sera'],0]],
+en:[['Which age counts when choosing the form?',['The age on Ijtema day','The age completed on 1 September 2026','The age on 1 January'],1],['A child born on 15 October 2016: which form?',['9 years','10 years','11 years'],0],['How many points is part A (this year\'s Nisab) worth?',['50','70','25'],1],['What is the grade for 78 points?',['Mumtaz','Very good','Good'],1],['From what age is there a presentation on «Messaggio di Pace»?',['From 9','From 11','From 13'],2],['By when is the homework voice note sent?',['Sunday evening','Friday morning','Wednesday evening'],0]],
+ur:[['فارم منتخب کرتے وقت کون سی عمر شمار ہوتی ہے؟',['اجتماع کے دن کی عمر','یکم ستمبر 2026 کو مکمل عمر','یکم جنوری کی عمر'],1],['15 اکتوبر 2016 کو پیدا ہونے والا بچہ کون سا فارم دیکھے؟',['9 سال','10 سال','11 سال'],0],['حصہ الف (اس سال کا نصاب) کے کتنے نمبر ہیں؟',['50','70','25'],1],['78 نمبر پر کون سا درجہ ہے؟',['ممتاز','بہت اچھا','اچھا'],1],['«پیغامِ صلح» پر پریزنٹیشن کس عمر سے ہے؟',['9 سال سے','11 سال سے','13 سال سے'],2],['ہوم ورک کا وائس نوٹ کب تک بھیجنا ہے؟',['اتوار کی شام تک','جمعہ کی صبح تک','بدھ کی شام تک'],0]]};
+var IJTEMA_QUIZ={
+ A:[
+  ["Come si chiama il nostro amato Profeta?", ["Hazrat Isa (as)", "Hazrat Musa (as)", "Hazrat Muhammad (saw)"], 2],
+  ["In quale città è nato il Santo Profeta (saw)?", ["Medina", "Mecca", "Gerusalemme"], 1],
+  ["Come si chiama il libro sacro dell'Islam?", ["Il Vangelo", "La Torah", "Il Sacro Corano"], 2],
+  ["Quante preghiere obbligatorie (namaz) facciamo ogni giorno?", ["5", "3", "7"], 0],
+  ["Come si chiama la preghiera dell'alba?", ["Fajr", "Maghrib", "Isha"], 0],
+  ["Come si chiama il Messia Promesso (as)?", ["Hazrat Mirza Tahir Ahmad (rh)", "Hazrat Hakim Nur-ud-Din (ra)", "Hazrat Mirza Ghulam Ahmad (as)"], 2],
+  ["In quale villaggio è nato il Messia Promesso (as)?", ["Rabwah", "Qadian", "Lahore"], 1],
+  ["Come si chiama il nostro Khalifa di oggi?", ["Hazrat Mirza Bashir-ud-Din Mahmud Ahmad (ra)", "Hazrat Mirza Nasir Ahmad (rh)", "Hazrat Mirza Masroor Ahmad (aba)"], 2],
+  ["Chi è stato il primo Khalifa dopo il Santo Profeta (saw)?", ["Hazrat Ali (ra)", "Hazrat Umar (ra)", "Hazrat Abu Bakr (ra)"], 2],
+  ["Quanti sono i pilastri dell'Islam?", ["4", "6", "5"], 2],
+  ["Che cosa diciamo prima di cominciare a mangiare?", ["Bismillahir Rahmanir Rahim", "Alhamdulillah", "Insha'Allah"], 0],
+  ["Come salutiamo un altro musulmano?", ["Masha'Allah", "Jazakallah", "Assalamo alaikum wa rahmatullah"], 2]
+ ],
+ B:[
+  ["Quante sure ci sono nel Sacro Corano?", ["114", "120", "99"], 0],
+  ["Qual è la prima sura del Sacro Corano?", ["Al-Fatiha", "An-Nas", "Al-Baqarah"], 0],
+  ["In quale grotta il Santo Profeta (saw) ricevette la prima rivelazione?", ["La grotta di Thaur", "La grotta di Hira", "La grotta di Badr"], 1],
+  ["Qual è stata la prima parola rivelata del Sacro Corano?", ["«Iqra'» (Leggi / Recita)", "«Bismillah»", "«Alhamdulillah»"], 0],
+  ["Che cos'è l'Hijra?", ["Il viaggio del Profeta (saw) in Siria da ragazzo", "Il pellegrinaggio dell'ultimo anno di vita del Profeta (saw)", "La migrazione del Santo Profeta (saw) da Mecca a Medina, nel 622 d.C."], 2],
+  ["Chi crebbe il Santo Profeta (saw) dopo la morte del nonno ʿAbdul Muttalib?", ["Lo zio Abu Talib", "Lo zio Hazrat Hamza (ra)", "Lo zio Abu Lahab"], 0],
+  ["Quando è nato il Messia Promesso (as)?", ["Il 26 maggio 1908", "Il 23 marzo 1889", "Il 13 febbraio 1835"], 2],
+  ["Quando e dove ebbe luogo la prima Bai'at (fondazione della Jamaʿat)?", ["Nel 1908, a Lahore", "Nel 1835, a Qadian", "Il 23 marzo 1889, a Ludhiana"], 2],
+  ["Chi fu il primo Khalifa del Messia Promesso (as)?", ["Hazrat Hakim Maulvi Nur-ud-Din (ra)", "Hazrat Mirza Nasir Ahmad (rh)", "Hazrat Mirza Bashir-ud-Din Mahmud Ahmad (ra)"], 0],
+  ["Chi è il Khalifatul Masih IV?", ["Hazrat Hakim Maulvi Nur-ud-Din (ra)", "Hazrat Mirza Tahir Ahmad (rh)", "Hazrat Mirza Masroor Ahmad (aba)"], 1],
+  ["Chi ha lanciato lo schema Waqf-e-Nau, e quando?", ["Hazrat Khalifatul Masih IV (rh), il 3 aprile 1987", "Hazrat Khalifatul Masih V (aba), nel 2003", "Hazrat Khalifatul Masih II (ra), nel 1934"], 0],
+  ["Che cosa significa «Waqf-e-Nau»?", ["«Nuova moschea»: un progetto di costruzione", "«Nuovo anno»: la festa di inizio anno", "«Nuova dedicazione»: una vita offerta al servizio dell'Islam, dedicata dai genitori già prima della nascita"], 2],
+  ["Quanti sono gli articoli di fede (Arkan-e-Iman)?", ["6", "5", "10"], 0],
+  ["In quale mese digiunano i musulmani?", ["Ramadan", "Muharram", "Shawwal"], 0],
+  ["Dove vive oggi Hazrat Khalifatul Masih V (aba)?", ["A Islamabad, Tilford (Regno Unito)", "A Rabwah (Pakistan)", "A Qadian (India)"], 0]
+ ],
+ C:[
+  ["In che anno il Messia Promesso (as) annunciò di essere il Messia Promesso e il Mahdi?", ["1882", "1891", "1905"], 1],
+  ["Quando e dove morì il Messia Promesso (as)?", ["Nel 1905, a Qadian", "Il 26 maggio 1908, a Lahore", "Nel 1889, a Ludhiana"], 1],
+  ["Quando ebbe inizio la Khilafat-e-Ahmadiyya?", ["Nel 1914", "Nel 1889", "Il 27 maggio 1908"], 2],
+  ["Quale libro del Messia Promesso (as) è nel Nisab di quest'anno (dai 13 anni)?", ["«Il Testamento» (Al-Wasiyyat)", "«Messaggio di Pace» (Paigham-e-Sulh)", "«La filosofia degli insegnamenti dell'Islam»"], 1],
+  ["Che cosa ha di particolare «Messaggio di Pace»?", ["È l'ultimo scritto del Messia Promesso (as), completato pochi giorni prima della sua morte, nel 1908", "È il suo primo libro, scritto da giovane", "È una raccolta di sue poesie in persiano"], 0],
+  ["Qual è la proposta centrale di «Messaggio di Pace»?", ["Che tutte le religioni si uniscano in una sola", "Che indù e musulmani rispettino a vicenda i propri profeti e fondatori e smettano di offenderli, per vivere in pace", "Che l'India venga divisa in due Stati"], 1],
+  ["In che anno il Messia Promesso (as) scrisse «Al-Wasiyyat» (Il Testamento)?", ["1908", "1905", "1891"], 1],
+  ["Quante sono le condizioni della Bai'at?", ["12", "5", "10"], 2],
+  ["Quale Khalifa guidò la Jamaʿat per oltre 50 anni (1914–1965)?", ["Hazrat Mirza Bashir-ud-Din Mahmud Ahmad (ra), Khalifatul Masih II", "Hazrat Mirza Nasir Ahmad (rh), Khalifatul Masih III", "Hazrat Mirza Tahir Ahmad (rh), Khalifatul Masih IV"], 0],
+  ["Chi fondò la Tahrik-e-Jadid, e quando?", ["Hazrat Khalifatul Masih II (ra), nel 1934", "Hazrat Khalifatul Masih III (rh), nel 1965", "Hazrat Khalifatul Masih IV (rh), nel 1987"], 0],
+  ["In che anno fu fondata la Majlis Khuddam-ul-Ahmadiyya?", ["1938", "1922", "1957"], 0],
+  ["Quando fu eletto Hazrat Khalifatul Masih V (aba)?", ["Il 22 aprile 2003", "Nel 1982", "Nel 2008"], 0],
+  ["«Wa mā Muḥammadun illā rasūl, qad khalat min qablihir-rusul» (3:145): che cosa dimostra?", ["Che tutti i profeti venuti prima del Santo Profeta (saw), compreso Gesù (as), sono morti", "Che Gesù (as) è ancora vivo in cielo", "Che il Corano fu rivelato in un solo giorno"], 0],
+  ["Che cosa significa «Khatam-un-Nabiyyin» (33:41)?", ["«Sigillo dei Profeti»: il Santo Profeta (saw) è il più alto in rango, e nessun profeta può venire se non come suo seguace", "«Il profeta dei soli arabi»", "«Il primo dei profeti»"], 0],
+  ["Perché Hazrat Khalifatul Masih IV (rh) lanciò lo schema Waqf-e-Nau nel 1987?", ["Per organizzare il primo Jalsa Salana", "Per raccogliere fondi per nuove moschee", "Per preparare una generazione di servitori dell'Islam per il secondo secolo dell'Ahmadiyyat (dal 1989)"], 2]
+ ]
+};
+var FAQ={
+it:[['I moduli contengono dati personali?','No. I moduli della Jaiza per età sono in bianco, senza nomi.'],['E se mio figlio compie gli anni tra settembre e l\'Ijtema?','Resta valida l\'età compiuta al 1° settembre 2026.'],['Dove trovo i testi del Nisab?','Nella scheda «Per età», sezione «Testi del Nisab ufficiale»: sono gratuiti.'],['Se perde una lezione?','I genitori aiutano a recuperare quella parte a casa; il compito si invia comunque con un messaggio vocale.'],['Le ragazze fanno la Jaiza?','Sì, i moduli sono per ragazzi e ragazze.'],['Chi contatto per dubbi?','L\'insegnante della classe di vostro figlio o vostra figlia.']],
+en:[['Do the forms contain personal data?','No. The Jaiza forms per age are blank, with no names.'],['What if my child has a birthday between September and the Ijtema?','The age completed on 1 September 2026 still applies.'],['Where do I find the Nisab texts?','In the «By age» tab, section «Official Nisab texts»: they are free.'],['What if they miss a lesson?','Parents help to catch up on that part at home; the homework is still sent as a voice note.'],['Do girls take the Jaiza?','Yes, the forms are for boys and girls.'],['Whom do I contact with doubts?','The class teacher of your son or daughter.']],
+ur:[['کیا فارموں میں ذاتی معلومات ہوتی ہیں؟','نہیں۔ عمر کے مطابق جائزے کے فارم خالی ہیں، ان میں کوئی نام نہیں۔'],['اگر ستمبر اور اجتماع کے درمیان سالگرہ آ جائے؟','یکم ستمبر 2026 کو مکمل ہونے والی عمر ہی شمار ہوگی۔'],['نصاب کی کتابیں کہاں سے ملیں گی؟','«عمر کے مطابق» ٹیب میں «سرکاری نصاب کی کتابیں» کے تحت: یہ مفت ہیں۔'],['اگر کلاس چھوٹ جائے؟','والدین گھر پر وہ حصہ پورا کروانے میں مدد کریں؛ ہوم ورک پھر بھی وائس نوٹ سے بھیجا جائے۔'],['کیا لڑکیوں کا بھی جائزہ ہوتا ہے؟','جی ہاں، فارم لڑکوں اور لڑکیوں دونوں کے لیے ہیں۔'],['کسی شک کی صورت میں کس سے رابطہ کریں؟','اپنے بیٹے یا بیٹی کی کلاس کے استاد سے۔']]};
+var L='it',TAB='home',AGE=null,qi=0,qs=0,quizLevel=null;
+function $(i){return document.getElementById(i)}
+function tr(o){return o[L]}
+function ageFrom(d){var a=REF.getFullYear()-d.getFullYear();var bd=new Date(REF.getFullYear(),d.getMonth(),d.getDate());if(bd>REF)a--;return a}
+function store(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem('wn_'+k)||'null');localStorage.setItem('wn_'+k,JSON.stringify(v))}catch(e){return null}}
+function itemsFor(a){var c=[];
+ if(HIFZ[a])c.push({k:'cHifz',l:HIFZ[a].map(function(h){return tr(h.s)+(h.v?' ('+I[L].verses+h.v+')':'')})});
+ var nm=[];if(NAMAZ[a])NAMAZ[a].forEach(function(x){nm.push(tr(x))});
+ if(a>=12){NAMAZ12.forEach(function(x){nm.push(tr(x))});if(NAMAZX[a])nm.push(tr(NAMAZX[a]))}
+ if(nm.length)c.push({k:'cNamaz',l:nm});
+ if(HAD[a])c.push({k:'cHad',l:[tr(HAD[a])]});
+ if(QAS[a])c.push({k:'cQas',l:[tr(QAS[a])]});
+ if(a>=13)c.push({k:'cOther',l:[tr(PRES)]});
+ return c}
+function renderChild(){var T=I[L],h='<h3>'+T.age+'</h3><div class="card"><div class="row"><label>'+T.ageq+' <input type="date" id="wn-bd" min="1990-01-01" max="2026-12-31"></label><span class="or">'+T.ageor+'</span><select id="wn-sel" aria-label="'+T.tabs[1]+'"><option value="">–</option>';
+ for(var a=3;a<=22;a++)h+='<option value="'+a+'"'+(AGE===a?' selected':'')+'>'+(a===22?'21+':a)+'</option>';
+ h+='</select></div><p class="or">'+T.ageref+'</p></div><div id="wn-res" aria-live="polite"></div>';
+ h+='<h3>'+T.nis+'</h3><p>'+nisabLink(null,NISAB_LABEL[L])+'<a class="btn" href="'+LINKS.p1+'" target="_blank" rel="noopener">'+T.p1+'</a><a class="btn" href="'+LINKS.p2+'" target="_blank" rel="noopener">'+T.p2+'</a><a class="btn" href="'+LINKS.p3+'" target="_blank" rel="noopener">'+T.p3+'</a></p>';
+ h+='<h3>'+T.tab+'</h3><table><tr><th>'+T.bd+'</th><th>'+T.fm+'</th></tr>'+ROWS.map(function(r){return '<tr><td>'+r[1]+'</td><td>'+r[0]+T.years+'</td></tr>'}).join('')+'</table>';
+ $('p-child').innerHTML=h;
+ $('wn-bd').onchange=function(){if(!this.value)return;var d=new Date(this.value+'T00:00:00');var a=ageFrom(d);setAge(a<3?0:a>21?22:a)};
+ $('wn-sel').onchange=function(){setAge(this.value?+this.value:null)};
+ showRes()}
+function setAge(a){AGE=a;store('age',a);$('wn-sel').value=a===null?'':a;showRes()}
+function showRes(){var T=I[L],el=$('wn-res');if(AGE===null){el.innerHTML='';return}
+ if(AGE===0){el.innerHTML='<div class="note">'+T.none+'</div>';return}
+ var over=AGE===22;
+ var formFile=JAIZA_DIR+(over?'oltre-21':AGE)+'.pdf';
+ var heading=over?T.over:T.ageis+AGE+T.years;
+ var h='<div class="card"><div class="big">'+heading+'</div><p>'+nisabLink(NISAB_PAGES[AGE],NISAB_LABEL[L])+'</p><h4>'+T.form+'</h4><p>'+T.formtxt+'</p><p>'+documentLink(formFile,JAIZA_OPEN[L],'it')+'</p></div>';
+ if(over){el.innerHTML=h;return}
+ var cats=itemsFor(AGE),st=store('ck_'+AGE)||{},tot=0,done=0;
+ if(!cats.length)h+='<div class="note">'+T.noData+'</div>';
+ else{cats.forEach(function(c,ci){h+='<h3>'+T[c.k]+'</h3>';
+ if(c.k==='cHad')h+='<p>'+nisabLink(HADITH_PAGES[AGE]||NISAB_PAGES[AGE],T.cHad+' · '+NISAB_LABEL[L])+'</p>';
+ h+='<ul class="ck">';c.l.forEach(function(x,i){var id=ci+'_'+i;tot++;var on=st[id];if(on)done++;h+='<li><label><input type="checkbox" data-id="'+id+'"'+(on?' checked':'')+'><span>'+x+'</span></label>'+(c.k==='cHifz'?' · '+tilawatLink(HIFZ[AGE][i].n,'Tilawat'):'')+'</li>'});h+='</ul>'});
+ h+='<div class="card"><b>'+T.prog+'</b>: <span id="wn-pc">'+Math.round(done/tot*100)+'%</span><div class="bar"><i id="wn-bar" style="width:'+Math.round(done/tot*100)+'%"></i></div><p class="noprint"><button class="btn" onclick="window.print()">'+T.print+'</button> <button class="btn" id="wn-reset" style="background:#8a7a4a">'+T.reset+'</button></p></div>'}
+ el.innerHTML=h;
+ el.querySelectorAll('input[type=checkbox]').forEach(function(cb){cb.onchange=function(){var s=store('ck_'+AGE)||{};s[cb.dataset.id]=cb.checked;store('ck_'+AGE,s);var n=el.querySelectorAll('input:checked').length;var p=Math.round(n/tot*100);$('wn-pc').textContent=p+'%';$('wn-bar').style.width=p+'%'}});
+ var rs=$('wn-reset');if(rs)rs.onclick=function(){store('ck_'+AGE,{});showRes()}}
+function renderHome(){var T=I[L];$('p-home').innerHTML='<h3>'+T.h1+'</h3><p>'+T.h2+'</p><h3>'+T.h3+'</h3><div class="grid"><div class="card"><div class="big">1</div>'+T.s1+'</div><div class="card"><div class="big">2</div>'+T.s2+'</div><div class="card"><div class="big">3</div>'+T.s3+'</div></div><div class="quick"><button class="btn" id="wn-go">'+T.hb+'</button><button class="btn secondary" id="wn-home-program">'+T.tabs[2]+'</button><button class="btn secondary" id="wn-home-quiz">'+T.tabs[4]+'</button></div><div class="note">'+T.priv+'</div>';$('wn-go').onclick=function(){tab('child',true)};$('wn-home-program').onclick=function(){tab('prog',true)};$('wn-home-quiz').onclick=function(){tab('quiz',true)}}
+var IJTEMA_SESSIONS=[
+ ['Sessione di apertura',[
+  ['10:00–10:30','Arrivo e registrazione','Ingresso'],
+  ['10:30','Tilawat · '+tilawatLink(3,'Āl-e-ʿImrān, vv. 36–38')+' · traduzione in urdu e in italiano','Sala principale'],
+  ['10:40','Nazm (poesia)','Sala principale'],
+  ['10:45','Benvenuto e istruzioni del Segretario Nazionale Waqf-e-Nau','Sala principale'],
+  ['10:50–12:30','Jaiza in gruppi e concorso artistico per chi attende','Sala principale'],
+  ['12:30–13:00','Quiz a tre livelli','Sala principale']]],
+ ['Pausa',[
+  ['13:00–14:00','Pranzo',''],['14:00–14:15','Preghiere Zuhr e ʿAsr','']]],
+ ['Sessione pomeridiana',[
+  ['14:15–14:35','Per tutti · «Gli algoritmi: che cosa ci mostrano i social e perché?» · Atta Ur Rafay Ekbal','Sala principale'],
+  ['14:35–15:00','Sotto i 13 anni · «Sei un dono per Allah: cosa vuol dire essere Waqf-e-Nau» · Murabbi Syed Aqeel Shah','Sala principale'],
+  ['14:35–15:00','Dai 13 anni · Incontro con Ataul Wasih Tariq, Muballigh Incharge Italia','Biblioteca'],
+  ['15:00–16:00','Sotto i 13 anni · Presentazioni e mostra del concorso artistico','Sala principale'],
+  ['15:00–16:00','Dai 13 anni · Presentazioni su «Messaggio di Pace» (Jaiza)','Biblioteca']]],
+ ['Sessione di chiusura',[
+  ['16:00','Tilawat · '+tilawatLink(3,'Āl-e-ʿImrān, vv. 103–105')+' · con traduzione','Sala principale'],
+  ['16:05','Premiazione','Sala principale'],
+  ['16:15–16:30','Discorso conclusivo e Duʿa','Sala principale']]]];
+function ijtemaSchedule(){
+ return '<div lang="it" dir="ltr"><p><strong>Domenica 22 novembre 2026</strong></p>'+IJTEMA_SESSIONS.map(function(section){
+  return '<h4>'+section[0]+'</h4><table><thead><tr><th scope="col">Orario</th><th scope="col">Programma</th><th scope="col">Luogo</th></tr></thead><tbody>'+section[1].map(function(row){
+   return '<tr><td>'+row[0]+'</td><td>'+row[1]+'</td><td>'+row[2]+'</td></tr>';
+  }).join('')+'</tbody></table>';
+ }).join('')+'<p>I genitori possono assistere a uno dei due programmi del pomeriggio.</p></div>';
+}
+function renderProg(){var T=I[L];$('p-prog').innerHTML='<h3>'+T.pg+'</h3><div class="grid"><div class="card"><b>'+T.pg1+'</b><br>'+T.pg1t+'</div><div class="card"><b>'+T.pg2+'</b><br>'+T.pg2t+'</div><div class="card"><b>'+T.pg3+'</b><br>'+T.pg3t+'</div><div class="card"><b>'+T.pg4+'</b><br>'+T.pg4t+'</div></div><h3>'+T.fmt+'</h3><div class="card"><ul><li>'+T.fmt1+'</li><li>'+T.fmt2+'</li><li>'+T.fmt3+'</li><li>'+T.fmt4+'</li></ul></div><h3>'+T.ij+'</h3><p>'+documentLink('https://ataulwasihtariq.github.io/waqfe-nau/materiali/programma-ijtema-2026.pdf',IJTEMA_PROGRAM[L])+'</p>'+ijtemaSchedule()}
+function renderJaiza(){var T=I[L];$('p-jaiza').innerHTML='<h3>'+T.jz+'</h3><p>'+T.jz0+'</p><p>'+documentLink(JAIZA_DIR+'moduli-per-eta.pdf',JAIZA_ALL[L],'it')+'</p><div class="split"><span style="width:70%;background:#153963">70</span><span style="width:25%;background:#d8b674">25</span><span style="width:5%;background:#71501e">5</span></div><div class="grid" style="margin-top:12px"><div class="card"><b>'+T.jzA+'</b> · 70<br>'+T.jzA0+'</div><div class="card"><b>'+T.jzB+'</b> · 25<br>'+T.jzB0+'</div><div class="card"><b>'+T.jzC+'</b> · 5<br>'+T.jzC0+'</div></div><h3>'+T.gr+'</h3><table><tr><td>'+T.g1+'</td><td>85–100</td></tr><tr><td>'+T.g2+'</td><td>70–84</td></tr><tr><td>'+T.g3+'</td><td>50–69</td></tr><tr><td>'+T.g4+'</td><td>&lt; 50</td></tr></table><div class="note">'+T.formtxt+'</div>'}
+function renderQuiz(){
+ var T=I[L],levels=[
+  ['A',t('Level A · Ages 5–9','Livello A · 5–9 anni','درجہ A · 5–9 سال')],
+  ['B',t('Level B · Ages 10–13','Livello B · 10–13 anni','درجہ B · 10–13 سال')],
+  ['C',t('Level C · Ages 14+','Livello C · Dai 14 anni','درجہ C · 14 سال اور زائد')],
+  ['parents',t('Parent quiz','Quiz per i genitori','والدین کا کوئز')]
+ ];
+ var h='<h3>Quiz Ijtema Waqf-e-Nau 2026</h3><div class="quick">'+levels.map(function(level){
+  return '<button class="btn secondary" data-level="'+level[0]+'" aria-pressed="false">'+tr(level[1])+'</button>';
+ }).join('')+'</div><div id="wn-q"></div><h3>'+T.faq+'</h3>';
+ FAQ[L].forEach(function(f){h+='<details><summary>'+f[0]+'</summary><p>'+f[1]+'</p></details>'});
+ var panel=$('p-quiz');
+ panel.innerHTML=h;
+ panel.querySelectorAll('[data-level]').forEach(function(button){
+  button.onclick=function(){selectQuiz(button.dataset.level,true)};
+ });
+ if(quizLevel)selectQuiz(quizLevel,false);
+}
+function selectQuiz(level,focus){
+ quizLevel=level;
+ $('p-quiz').querySelectorAll('[data-level]').forEach(function(button){
+  var active=button.dataset.level===level;
+  button.setAttribute('aria-pressed',String(active));
+  button.classList.toggle('secondary',!active);
+ });
+ qi=0;qs=0;drawQ(focus);
+}
+function drawQ(focus){
+ var T=I[L],qq=quizLevel==='parents'?Q[L]:IJTEMA_QUIZ[quizLevel],el=$('wn-q');
+ if(qi>=qq.length){
+  el.innerHTML='<div class="card"><div class="big" id="wn-question" tabindex="-1">'+T.score+qs+' / '+qq.length+'</div><p><button class="btn" id="wn-qa">'+T.again+'</button></p></div>';
+  $('wn-qa').onclick=function(){qi=0;qs=0;drawQ(true)};
+  if(focus)$('wn-question').focus();
+  return;
+ }
+ var q=qq[qi],locked=false;
+ var reveal=t('Show answer','Mostra risposta','جواب دکھائیں');
+ var correct=t('Correct answer','Risposta corretta','درست جواب');
+ el.innerHTML='<div class="card"><p id="wn-question" tabindex="-1"'+(quizLevel==='parents'?'':' lang="it"')+'><b>'+(qi+1)+'/'+qq.length+'</b> · '+q[0]+'</p>'+q[1].map(function(o,i){return '<button class="opt" data-i="'+i+'"'+(quizLevel==='parents'?'':' lang="it"')+'>'+o+'</button>'}).join('')+'<p id="wn-answer" aria-live="polite"></p><p id="wn-nx"><button class="btn" id="wn-reveal">'+reveal[L]+'</button></p></div>';
+ var options=el.querySelectorAll('.opt');
+ function showAnswer(selected){
+  if(locked)return;
+  locked=true;
+  if(selected===q[2])qs++;
+  else if(selected!==null)options[selected].classList.add('no');
+  options[q[2]].classList.add('ok');
+  options.forEach(function(option){option.disabled=true});
+  $('wn-answer').textContent=correct[L]+' · '+q[1][q[2]];
+  $('wn-nx').innerHTML='<button class="btn" id="wn-n">'+T.next+'</button>';
+  $('wn-n').onclick=function(){qi++;drawQ(true)};
+  $('wn-n').focus();
+ }
+ options.forEach(function(button){button.onclick=function(){showAnswer(+button.dataset.i)}});
+ $('wn-reveal').onclick=function(){showAnswer(null)};
+ if(focus)$('wn-question').focus();
+}
+function renderTeach(){var T=I[L];$('p-teach').innerHTML='<h3>'+T.tc+'</h3><p>'+T.tc0+'</p><h3>'+T.r0+'</h3><div class="card"><ol><li>'+T.r1+'</li><li>'+T.r2+'</li><li>'+T.r3+'</li><li>'+T.r4+'</li></ol></div><h3>'+T.mk+'</h3><table><tr><td>'+T.m4+'</td></tr><tr><td>'+T.m3+'</td></tr><tr><td>'+T.m2+'</td></tr><tr><td>'+T.m1+'</td></tr><tr><td>'+T.m0+'</td></tr></table><h3>'+T.rl+'</h3><div class="card"><ul><li>'+T.rl1+'</li><li>'+T.rl2+'</li><li>'+T.rl3+'</li></ul></div>'}
+var IDS=['home','child','prog','jaiza','quiz','teach'];
+function tab(id,moveFocus){
+ TAB=id;
+ IDS.forEach(function(x){$('p-'+x).classList.toggle('on',x===id)});
+ $('wn-tabs').querySelectorAll('button').forEach(function(button){
+  var active=button.dataset.t===id;
+  button.classList.toggle('on',active);
+  button.setAttribute('aria-pressed',String(active));
+ });
+ if(id==='child')renderChild();
+ if(moveFocus){
+  var heading=$('p-'+id).querySelector('h3');
+  heading.tabIndex=-1;
+  heading.focus({preventScroll:true});
+  heading.scrollIntoView({block:'nearest'});
+ }
+ try{history.replaceState(null,'','#'+L+(id==='home'?'':'/'+id))}catch(e){}
+}
+function cd(){var T=I[L],n=Math.ceil((IJTEMA-new Date(new Date().toDateString()))/864e5);$('wn-cd').textContent=n>0?T.cd0+n+T.cdd:n===0?T.cdt:T.cdp}
+function setL(l){L=l;root.className='wn'+(l==='ur'?' ur':'');root.lang=l;root.dir=l==='ur'?'rtl':'ltr';var T=I[l];
+ root.querySelector('[data-i=title]').textContent=T.title;root.querySelector('[data-i=sub]').textContent=T.sub;
+ $('wn-tabs').setAttribute('aria-label',T.title);
+ $('wn-tabs').innerHTML=IDS.map(function(x,i){return '<button data-t="'+x+'">'+T.tabs[i]+'</button>'}).join('');
+ $('wn-tabs').querySelectorAll('button').forEach(function(b){b.onclick=function(){tab(b.dataset.t,true)}});
+ root.querySelectorAll('.lg button').forEach(function(b){var current=b.dataset.l===l;b.classList.toggle('on',current);b.setAttribute('aria-pressed',String(current))});
+ renderHome();renderProg();renderJaiza();renderQuiz();renderTeach();cd();tab(TAB)}
+root.querySelectorAll('.lg button').forEach(function(b){b.onclick=function(){setL(b.dataset.l)}});
+var route=(location.hash||'').slice(1).split('/');
+if(IDS.includes(route[1]))TAB=route[1];
+AGE=store('age');
+setL(['it','en','ur'].includes(route[0])?route[0]:'it');
+})();
+</script>
+
+<style>/* Tema comune "Jamaat Italia": verde, oro, crema – uguale al mockup di alislam.it.
+   Si applica sopra gli stili di .wn (sito Waqf-e-Nau) e alle pagine Jaiza/Famiglia. */
+
+
+.wn{--g:#2f5d4a;--gold:#a8873a;--cream:#fbf8f1;--dark:#1e2b26;--line:#e6dcc4;
+ font-family:'Source Sans 3',system-ui,sans-serif;color:#2b2f2c;background:var(--cream)}
+.wn.ur{font-family:'Noto Nastaliq Urdu',serif}
+.wn h2,.wn h3,.wn h4{font-family:'Cormorant Garamond',serif;font-weight:600}
+.wn.ur h2,.wn.ur h3,.wn.ur h4{font-family:'Noto Nastaliq Urdu',serif}
+.wn h3{color:var(--dark);border-bottom:2px solid var(--gold);font-size:1.7rem}
+.wn .hd{background:var(--dark);border-radius:0;border-bottom:3px solid var(--gold)}
+.wn .hd p{color:#efe9da}
+.wn .logo{background:#fff;border:2px solid var(--gold)}
+.wn .banner{border:1px solid var(--gold);border-radius:2px}
+.wn .cd{background:var(--gold);color:#fff}
+.wn .lg button{border-color:#d8c48f}
+.wn .lg button.on{background:#d8c48f;border-color:#d8c48f;color:var(--dark)}
+.wn .tabs{background:var(--cream);border-bottom:1px solid var(--line)}
+.wn .tabs button{border:1px solid var(--line);color:var(--dark);border-radius:2px}
+.wn .tabs button.on{background:var(--g);border-color:var(--g);color:#fbf8f1}
+.wn .card,.wn details,.wn th,.wn td{border-color:var(--line)}
+.wn .card{border-radius:2px}
+.wn .note{border-inline-start-color:var(--gold)}
+.wn .btn{border-radius:2px;background:var(--g)}
+.wn .quick .btn.secondary{border-color:var(--g)}
+.wn th{background:#f5f1e6}
+.wn .big{color:var(--g);font-family:'Cormorant Garamond',serif}
+.wn .tag{background:#f5f1e6}
+.wn .bar{background:#eadfc0}
+.wn .bar i{background:var(--g)}
+.wn ul.ck li{border-bottom-color:var(--line)}
+.wn :focus-visible{outline-color:#6f5620}
+/* barra 70/25/5: colori del tema */
+.wn .split span:nth-child(1){background:#2f5d4a!important}
+.wn .split span:nth-child(2){background:#a8873a!important}
+.wn .split span:nth-child(3){background:#1e2b26!important}
+
+/* Barra "Dipartimenti" coerente col sito: usata nelle pagine Jaiza/Famiglia */
+.jz-top{background:#1e2b26;color:#efe9da;font-size:14px;padding:9px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:'Source Sans 3',sans-serif}
+.jz-top a{color:#efe9da;text-decoration:none;margin-inline-start:16px}
+
+/* neutralizza le regole del mockup che hanno gli stessi nomi di classe (.hero .card .note) */
+.wn .hero{min-height:0;display:grid;background:none;align-items:center}
+.wn .card{display:block;text-decoration:none;color:inherit}
+.wn .card p{margin:0 0 .6em;font-size:inherit;color:inherit}
+.wn .note{text-align:start;color:inherit;font-size:inherit;border-bottom:0}
+.wn{margin-bottom:60px}</style>
+<footer class="patdark">
+<div class="w g">
+<div><strong>Comunità Musulmana Ahmadiyya</strong><span style="line-height:1.6;font-size:15px">Via Morgobbo 1035/A, Gavaseto<br>40018 San Pietro in Casale (BO)</span></div>
+<div><small>Conoscere</small><a href="#">Che cos’è l’Islam</a><a href="#">Il Sacro Corano</a><a href="#">Il Profeta Muhammad</a><a href="#">Il Messia Promesso</a></div>
+<div><small>Per la Comunità</small><a href="#">Orari delle preghiere</a><a href="#">Calendario del Ramadan</a><a href="#">Iscrizione</a><a href="waqf-e-nau.html">Dipartimento Waqf-e-Nau</a></div>
+<div><small>Contatti</small><a href="#">Numero verde 800 598 005</a><a href="#">WhatsApp +39 051 199 00 451</a><a href="#">contatti@alislam.it</a></div>
+</div>
+<div class="w bot"><span>© Associazione The Ahmadiyya Muslim Jama’at Italia</span><span><a href="#">Privacy</a><a href="#">Cookie</a></span></div>
+</footer>
+</body></html>

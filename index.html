@@ -30,6 +30,12 @@ header .w{padding-top:20px;padding-bottom:20px;display:flex;flex-wrap:wrap;align
 .brand small{display:block;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#6f5620}
 nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px;font-size:16px}
 nav a{text-decoration:none;color:#1e2b26}
+.dd{position:relative}
+.dd>a:after{content:" ▾";font-size:12px;color:#a8873a}
+.dd .menu{display:none;position:absolute;top:100%;left:-14px;min-width:240px;background:#fff;border:1px solid #e6dcc4;border-top:2px solid #a8873a;padding:8px 0;z-index:20;box-shadow:0 10px 24px rgba(30,43,38,.12)}
+.dd:hover .menu,.dd:focus-within .menu{display:block}
+.dd .menu a{display:block;padding:10px 20px;font-size:16px;white-space:nowrap}
+.dd .menu a:hover{background:#f5f1e6}
 nav a.cta{color:#fbf8f1;background:#2f5d4a;padding:11px 22px;border-radius:2px;font-weight:600}
 .hero{min-height:620px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(251,248,241,.97) 0%,rgba(251,248,241,.88) 34%,rgba(251,248,241,0) 62%),url(img/hero.webp) center/cover no-repeat,#efe6cf}
 .hero .w,.serv .w{width:100%}
@@ -101,7 +107,7 @@ footer .bot a{color:#d9d3c3;margin-left:20px}
 <a href="#" class="brand">
 <svg width="46" height="46" viewBox="0 0 80 80" aria-hidden="true"><g fill="none" stroke="#a8873a" stroke-width="3"><path d="M40 6 L50 30 L74 40 L50 50 L40 74 L30 50 L6 40 L30 30 Z"/><path d="M16 16 L40 25 L64 16 L55 40 L64 64 L40 55 L16 64 L25 40 Z"/></g><circle cx="40" cy="40" r="8" fill="#2f5d4a"/></svg>
 <span><b>Comunità Musulmana Ahmadiyya</b><small>in Italia · dal 1889</small></span></a>
-<nav aria-label="Menu principale"><a href="#">Conoscere l’Islam</a><a href="#">Chi siamo</a><a href="#">Domande e risposte</a><a href="#">Sermoni del Venerdì</a><a href="#">Libri</a><a href="#">Notizie ed eventi</a><a href="#" class="cta">Parliamone</a></nav>
+<nav aria-label="Menu principale"><a href="#">Conoscere l’Islam</a><a href="#">Chi siamo</a><a href="#">Domande e risposte</a><a href="#">Sermoni del Venerdì</a><a href="#">Libri</a><span class="dd"><a href="dipartimenti/">Dipartimenti</a><span class="menu"><a href="dipartimenti/waqf-e-nau.html">Waqf-e-Nau</a><a href="dipartimenti/">Tutti i dipartimenti</a></span></span><a href="#">Notizie ed eventi</a><a href="#" class="cta">Parliamone</a></nav>
 </div></header>
 
 <section class="hero"><div class="w"><div class="in">
@@ -163,7 +169,7 @@ footer .bot a{color:#d9d3c3;margin-left:20px}
 <div class="w g">
 <div><strong>Comunità Musulmana Ahmadiyya</strong><span style="line-height:1.6;font-size:15px">Via Morgobbo 1035/A, Gavaseto<br>40018 San Pietro in Casale (BO)</span></div>
 <div><small>Conoscere</small><a href="#">Che cos’è l’Islam</a><a href="#">Il Sacro Corano</a><a href="#">Il Profeta Muhammad</a><a href="#">Il Messia Promesso</a></div>
-<div><small>Per la Comunità</small><a href="#">Orari delle preghiere</a><a href="#">Calendario del Ramadan</a><a href="#">Iscrizione</a></div>
+<div><small>Per la Comunità</small><a href="#">Orari delle preghiere</a><a href="#">Calendario del Ramadan</a><a href="#">Iscrizione</a><a href="dipartimenti/waqf-e-nau.html">Dipartimento Waqf-e-Nau</a></div>
 <div><small>Contatti</small><a href="#">Numero verde 800 598 005</a><a href="#">WhatsApp +39 051 199 00 451</a><a href="#">contatti@alislam.it</a></div>
 </div>
 <div class="w bot"><span>© Associazione The Ahmadiyya Muslim Jama’at Italia</span><span><a href="#">Privacy</a><a href="#">Cookie</a></span></div>
